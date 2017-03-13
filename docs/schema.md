@@ -32,3 +32,11 @@ column name | data type | details
 id          | integer   | not null, primary key
 story_id    | integer   | not null
 user_id     | integer   | not null
+
+## comments
+column name | data type | details
+------------|-----------|-----------------------
+id          | integer   | not null, primary key
+story_id    | integer   | not null
+user_id     | integer   | not null
+comment     | text   | not null
