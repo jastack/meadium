@@ -39,7 +39,7 @@ Minimum is a web application inspired by Medium built using Ruby on Rails and Re
 
 ### Phase 1: Backend setup and Front End User Authentication (2 days)
 
-**Objective:** Functioning rails project with front-end Authentication
+**Objective:** Functioning rails project with front-end Authentication. User React modal for authentication views. 
 
 ### Phase 2: Notes Model, API, and components (2 days)
 
