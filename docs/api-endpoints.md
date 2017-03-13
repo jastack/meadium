@@ -21,8 +21,6 @@
 ### Stories
 
 - `GET /api/stories`
-  - Notes index/search
-  - accepts `tag_name` query param to list stories by tag
 - `POST /api/stories`
 - `GET /api/stories/:id`
 - `PATCH /api/stories/:id`
