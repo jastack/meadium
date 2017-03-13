@@ -7,7 +7,7 @@
 [heroku]: http://www.herokuapp.com
 [trello]: https://trello.com
 
-## Minimum Viable Product
+## "Minimum" Viable Product
 
 Minimum is a web application inspired by Medium built using Ruby on Rails and React/Redux. By the end of Week 9, this app will, at a minimum (no pun intended), satisfy the following criteria with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
 
@@ -39,28 +39,28 @@ Minimum is a web application inspired by Medium built using Ruby on Rails and Re
 
 ### Phase 1: Backend setup and Front End User Authentication (2 days)
 
-**Objective:** Functioning rails project with front-end Authentication. User React modal for authentication views. 
+**Objective:** Functioning rails project with front-end Authentication. Use React modal for authentication views.
 
-### Phase 2: Notes Model, API, and components (2 days)
+### Phase 2: Stories Model, API, and components (2 days)
 
-**Objective:** Notes can be created, read, edited and destroyed through
+**Objective:** Stories can be created, read, edited and destroyed through
 the API.
 
-### Phase 3: Notebooks (2 days)
+### Phase 3: Follows, Likes, and Comments (2 days)
 
-**Objective:** Notes belong to Notebooks that can be created, read, edited and destroyed through the API.
+**Objective:** Users can like and comment on stories and follow authors.
 
-### Phase 4: Tags (1 day)
+### Phase 4: Allow Complex Styling in Stories (2 day)
 
-**Objective:** Notes can be tagged with multiple tags, and tags are searchable.
+**Objective:** Allow rich text editing of stories and ability to add photos.
 
-### Phase 5: Allow Complex Styling in Notes (1 day, W2 Th 6pm)
+### Phase 5: Add Sidebar and Beautify CSS (1 day, W2 Th 6pm)
 
-**Objective:** Allow rich text editing of notes.
+**Objective:** Use CSS to finalize look of site -- add sidebar so user can see list of topics.
 
-### Phase 6: - Pagination / infinite scroll for Notes Index (1 day, W2 F 6pm)
+### Phase 6: - Finish anything else left to do (1 day, W2 F 6pm)
 
-**Objective:** Add infinite scroll to Notes Index
+**Objective:** Fill in any leftover holes, add bonus features.
 ### Bonus Features (TBD)
 - [ ] Topics/categories
 - [ ] Bookmarks
