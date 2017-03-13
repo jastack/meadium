@@ -2,14 +2,14 @@
 
 [Heroku link][heroku]  **Placeholder** Once I have heroku set up I will link it here
 
-[Trello link][trello] **Placeholder** Again, once trello set up I will link it here
+[Trello link][trello]
 
 [heroku]: http://www.herokuapp.com
-[trello]: https://trello.com
+[trello]: https://trello.com/b/E2GWirqe/minimum
 
 ## "Minimum" Viable Product
 
-Minimum is a web application inspired by Medium built using Ruby on Rails and React/Redux. By the end of Week 9, this app will, at a minimum (no pun intended), satisfy the following criteria with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
+Minimum is a web application for reading and writing essays and articles inspired by Medium and built using Ruby on Rails and React/Redux. By the end of the two-week full stack project period this app will, at a minimum (no pun intended), satisfy the following criteria with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
 
 - [ ] Hosting on Heroku
 - [ ] New account creation, login, and guest/demo login
@@ -50,7 +50,7 @@ the API.
 
 **Objective:** Users can like and comment on stories and follow authors.
 
-### Phase 4: Allow Complex Styling in Stories (2 day)
+### Phase 4: Allow Complex Styling in Stories (1 day)
 
 **Objective:** Allow rich text editing of stories and ability to add photos.
 
@@ -64,3 +64,4 @@ the API.
 ### Bonus Features (TBD)
 - [ ] Topics/categories
 - [ ] Bookmarks
+- [ ] Tags
