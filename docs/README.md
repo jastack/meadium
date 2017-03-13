@@ -35,7 +35,6 @@ Minimum is a web application for writing stories, essays, and articles and it al
 [state]: sample-state.md
 
 ## Implementation Timeline
-## Implementation Timeline
 
 ### Phase 1: Backend setup and Front End User Authentication (2 days)
 
