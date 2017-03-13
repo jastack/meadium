@@ -9,7 +9,7 @@
 
 ## "Minimum" Viable Product
 
-Minimum is a web application for writing stories, essays, and articles and it allows users to follow other authors. It is inspired by Medium and built using Ruby on Rails and React/Redux. By the end of the two-week full stack project period this app will, at a minimum (no pun intended), satisfy the following criteria and at each step I will implement smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
+Minimum is a web application for writing stories, essays, and articles and it allows users to follow other authors. It is inspired by Medium and built using Ruby on Rails and React/Redux. At each step I will implement smooth, bug-free navigation, adequate seed data and sufficient CSS styling and by the end of the project period this app will, at a minimum (no pun intended), satisfy the following criteria:
 
 - [ ] Hosting on Heroku
 - [ ] New account creation, login, and guest/demo login
