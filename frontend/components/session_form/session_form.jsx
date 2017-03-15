@@ -7,6 +7,7 @@ class SessionForm extends React.Component {
 		super(props);
 		this.state = { username: "", password: "" };
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.closeModal = this.closeModal.bind(this);
 	}
 
 	componentDidUpdate() {
@@ -16,6 +17,10 @@ class SessionForm extends React.Component {
 	componentWillMount() {
     Modal.setAppElement('body');
    }
+
+	 closeModal(){
+		 this.setState({modalIsOpen: false});
+	 }
 
 	redirectIfLoggedIn() {
 		if (this.props.loggedIn) {
@@ -62,7 +67,7 @@ class SessionForm extends React.Component {
 	render() {
 		return (
 			<div className="login-form-container">
-				<Modal isOpen={true} contentLabel="Modal">
+				<Modal isOpen={true} contentLabel="Modal" onRequestClose={this.closeModal} >
 					<div className="login-form">
 						<h2>MEADIUM</h2>
 					<form onSubmit={this.handleSubmit} className="login-form-box">
