@@ -25,9 +25,12 @@ class SessionForm extends React.Component {
 	}
 
 	handleSubmit(e) {
+    console.log(e);
+    console.log(this.state);
+    console.log({user});
 		e.preventDefault();
 		const user = this.state;
-		this.props.processForm({user});
+		this.props.processForm(user);
 	}
 
 	navLink() {
@@ -55,8 +58,6 @@ class SessionForm extends React.Component {
 			<div className="login-form-container">
 				<form onSubmit={this.handleSubmit} className="login-form-box">
 					Welcome to Meadium!
-					<br/>
-					Please {this.props.formType} or {this.navLink()}
 					{this.renderErrors()}
 					<div className="login-form">
 						<br/>

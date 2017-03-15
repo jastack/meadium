@@ -10,6 +10,10 @@
 	align-items: center;
 }
 
+li.login-signup.current {
+	color: red;
+}
+
 .left-nav > ul > li {
 	margin-left: 4px;
 	cursor: pointer;
