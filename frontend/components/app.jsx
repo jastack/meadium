@@ -16,6 +16,16 @@ const App = ({ children }) => (
         </ul>
       </nav>
     </header>
+    <header className="topics">
+      <nav className="sub-topics">
+        <ul>
+          <li>Home</li>
+          <li>Top Stories</li>
+          <li>Politics</li>
+        </ul>
+      </nav>
+
+    </header>
     { children }
   </div>
 );

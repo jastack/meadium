@@ -1,0 +1,21 @@
+.topics {
+  display: flex;
+  border-top: 1px solid rgba(0,0,0,.05);
+  // border-bottom: 1px solid rgba(0,0,0,.05);
+  // box-shadow: 10px 10px 5px #888888;
+  padding: 0px 20px 100px 20px;
+}
+
+.sub-topics ul {
+  display: flex;
+  align-items: center;
+  color: rgba(0,0,0,.44);
+}
+
+.sub-topics li {
+  padding: 10px 12px 18px 0px;
+}
+
+.sub-topics li:hover{
+  color: rgba(0,0,0,.6);
+}

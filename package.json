@@ -21,7 +21,6 @@
     "url": "https://github.com/jastack/minimum/issues"
   },
   "homepage": "https://github.com/jastack/minimum#readme",
-
   "dependencies": {
     "babel-core": "^6.2.0",
     "babel-loader": "^6.2.0",
@@ -30,6 +29,7 @@
     "lodash": "^4.15.0",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
+    "react-modal": "^1.7.3",
     "react-redux": "^4.4.5",
     "react-router": "2.4.x",
     "redux": "^3.5.2",
