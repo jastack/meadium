@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
+import  Modal  from 'react-modal';
 
 class SessionForm extends React.Component {
 	constructor(props) {
@@ -11,6 +12,10 @@ class SessionForm extends React.Component {
 	componentDidUpdate() {
 		this.redirectIfLoggedIn();
 	}
+
+	componentWillMount() {
+    Modal.setAppElement('body');
+   }
 
 	redirectIfLoggedIn() {
 		if (this.props.loggedIn) {
@@ -25,9 +30,6 @@ class SessionForm extends React.Component {
 	}
 
 	handleSubmit(e) {
-    console.log(e);
-    console.log(this.state);
-    console.log({user});
 		e.preventDefault();
 		const user = this.state;
 		this.props.processForm(user);
@@ -53,31 +55,41 @@ class SessionForm extends React.Component {
 		);
 	}
 
+	destroyErrors() {
+		this.props.errors = [];
+	}
+
 	render() {
 		return (
 			<div className="login-form-container">
-				<form onSubmit={this.handleSubmit} className="login-form-box">
-					Welcome to Meadium!
-					{this.renderErrors()}
+				<Modal isOpen={true} contentLabel="Modal">
 					<div className="login-form">
-						<br/>
-						<label> Username:
-							<input type="text"
-								value={this.state.username}
-								onChange={this.update("username")}
-								className="login-input" />
-						</label>
-						<br/>
-						<label> Password:
-							<input type="password"
-								value={this.state.password}
-								onChange={this.update("password")}
-								className="login-input" />
-						</label>
-						<br/>
-						<input type="submit" value="Submit" />
-					</div>
-				</form>
+						<h2>MEADIUM</h2>
+					<form onSubmit={this.handleSubmit} className="login-form-box">
+						{this.renderErrors()}
+							<br/>
+							<label> Enter your username and password below:
+								<br />
+								<input type="text"
+									value={this.state.username}
+									onChange={this.update("username")}
+									className="login-input"
+									placeholder="username" />
+							</label>
+							<br/>
+							<label>
+								<br />
+								<input type="password"
+									value={this.state.password}
+									onChange={this.update("password")}
+									className="login-input"
+									placeholder="password"/>
+							</label>
+							<br/>
+							<input type="submit" value="Submit" />
+					</form>
+				</div>
+			</Modal>
 			</div>
 		);
 	}

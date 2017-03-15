@@ -1,5 +1,6 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
+import Example from './modal';
 
 const App = ({ children }) => (
   <div>
@@ -9,13 +10,9 @@ const App = ({ children }) => (
           <li>Meadium</li>
         </ul>
       </nav>
-      <nav className="right-nav">
-        <ul className="login">
-          <li><GreetingContainer /></li>
-          <li className="search-modal"><i className="fa fa-search"></i></li>
-        </ul>
-      </nav>
+      <GreetingContainer />
     </header>
+
     <header className="topics">
       <nav className="sub-topics">
         <ul>
@@ -24,8 +21,8 @@ const App = ({ children }) => (
           <li>Politics</li>
         </ul>
       </nav>
-
     </header>
+
     { children }
   </div>
 );

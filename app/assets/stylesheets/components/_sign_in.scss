@@ -1,0 +1,52 @@
+.custom-modal {
+  color: red;
+  width: 74%;
+  position: absolute;
+  margin-left: 13%;
+  margin-top: 25%;
+}
+
+.custom-modal h2 {
+  color: black;
+  background-color: #D3D3D3;
+  text-align: center;
+  height: 40px;
+  padding-top: 45px;
+  font-size: 34px;
+}
+
+.custom-modal label {
+  margin-top: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.custom-modal form {
+  display: flex-box;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-modal input[type="text"], .custom-modal input[type="password"]  {
+  color: blue;
+  margin-left: 10px;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+
+.custom-modal input[type="text"]:focus, .custom-modal input[type="password"]:focus {
+  border-bottom: solid 2px #969696
+}
+
+.custom-modal input[type="submit"] {
+  margin-top: 10px;
+  color: #00ab6b;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #00ab6b;
+}
+
+.custom-modal input[type="submit"]:hover {
+  align-items: baseline;
+  color: #1c9963;
+}
