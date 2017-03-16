@@ -1,10 +1,10 @@
 # Meadium
 
-[Heroku link][heroku]  **Placeholder** Once I have heroku set up I will link it here
+[Heroku link][heroku]
 
 [Trello link][trello]
 
-[heroku]: http://www.herokuapp.com
+[heroku]: https://meadium.herokuapp.com
 [trello]: https://trello.com/b/E2GWirqe/minimum
 
 ## Minimum Viable Product
