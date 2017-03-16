@@ -8,10 +8,15 @@ class SessionForm extends React.Component {
 		this.state = { username: "", password: "" };
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.closeModal = this.closeModal.bind(this);
+		this.clearErrors = this.clearErrors.bind(this);
 	}
 
 	componentDidUpdate() {
 		this.redirectIfLoggedIn();
+	}
+
+	clearErrors(){
+		this.props.clearErrors();
 	}
 
 	componentWillMount() {
@@ -42,9 +47,9 @@ class SessionForm extends React.Component {
 
 	navLink() {
 		if (this.props.formType === "login") {
-			return <h3>Need an account? <Link className="link" to="/signup">Sign up!</Link></h3>;
+			return <h3>Need an account? <Link className="link" to="/signup" onClick={this.clearErrors} >Sign up!</Link></h3>;
 		} else {
-			return <h3>Already have an account? <Link className="link" to="/login">Sign in!</Link></h3>;
+			return <h3>Already have an account? <Link className="link" to="/login" onClick={this.clearErrors} >Sign in!</Link></h3>;
 		}
 	}
 
