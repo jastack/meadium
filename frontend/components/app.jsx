@@ -17,7 +17,12 @@ const App = ({ children }) => (
         <ul>
           <li>Home</li>
           <li>Top Stories</li>
-          <li>Politics</li>
+          <li>Editor's picks</li>
+          <li>Technology</li>
+          <li>Humans</li>
+          <li>Culture</li>
+          <li>Business</li>
+          <li>Bookmarks</li>
         </ul>
       </nav>
     </header>

@@ -1,9 +1,9 @@
 .topics {
   display: flex;
   border-top: 1px solid rgba(0,0,0,.05);
-  // border-bottom: 1px solid rgba(0,0,0,.05);
-  // box-shadow: 10px 10px 5px #888888;
-  padding: 0px 20px 100px 20px;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  box-shadow: 1px 1px 1px rgba(0,0,0,.05);
+  padding: 0px 20px 0px 20px;
 }
 
 .sub-topics ul {
@@ -13,7 +13,7 @@
 }
 
 .sub-topics li {
-  padding: 10px 12px 18px 0px;
+  padding: 10px 12px 10px 0px;
 }
 
 .sub-topics li:hover{
