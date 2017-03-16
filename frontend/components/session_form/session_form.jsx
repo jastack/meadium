@@ -9,6 +9,7 @@ class SessionForm extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.closeModal = this.closeModal.bind(this);
 		this.clearErrors = this.clearErrors.bind(this);
+		this.guestLogin = this.guestLogin.bind(this);
 	}
 
 	componentDidUpdate() {
@@ -91,10 +92,10 @@ class SessionForm extends React.Component {
 		}
 	}
 
-
-	destroyErrors() {
-		this.props.errors = [];
+	guestLogin(){
+		this.props.login({username: "guest", password: "password"});
 	}
+
 
 	render() {
 		return (
@@ -116,7 +117,7 @@ class SessionForm extends React.Component {
 									value={this.state.username}
 									onChange={this.update("username")}
 									className="login-input"
-									placeholder="username" />
+									placeholder="your username" />
 							</label>
 							<br/>
 							<label>
@@ -125,9 +126,10 @@ class SessionForm extends React.Component {
 									value={this.state.password}
 									onChange={this.update("password")}
 									className="login-input"
-									placeholder="password"/>
+									placeholder="your password"/>
 							</label>
 							<br/>
+							<button onClick={this.guestLogin}>Demo</button>
 							{this.renderSubmit()}
 							{this.navLink()}
 					</form>

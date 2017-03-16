@@ -59,6 +59,20 @@
   transition: border 0.3s;
 }
 
+.modal button {
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #00ab6b;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #00ab6b;
+}
+
+.modal button:hover {
+  align-items: baseline;
+  color: #1c9963;
+}
+
 
 .modal input[type="text"]:focus, .modal input[type="password"]:focus {
   border-bottom: solid 2px #969696
