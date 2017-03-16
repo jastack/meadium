@@ -1,12 +1,13 @@
-.custom-modal {
-  color: red;
+.modal {
   width: 74%;
   position: absolute;
   margin-left: 13%;
   margin-top: 25%;
+  background-color: white;
+  box-shadow: 10px 10px 5px black;
 }
 
-.custom-modal h2 {
+.modal h2 {
   color: black;
   background-color: #D3D3D3;
   text-align: center;
@@ -15,30 +16,51 @@
   font-size: 34px;
 }
 
-.custom-modal label {
+.modal h3 {
+  color: black;
+  font-size: 16px;
+  margin: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-weight: lighter;
+}
+
+.modal label {
   margin-top: 10px;
   color: black;
   font-size: 20px;
 }
 
-.custom-modal form {
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 1s ease-in-out;
+    background: black;
+    opacity: .5;
+  }
+
+.modal form {
   display: flex-box;
+  align-items: center;
   margin-left: 20px;
   margin-bottom: 20px;
 }
 
-.custom-modal input[type="text"], .custom-modal input[type="password"]  {
+.modal input[type="text"], .modal input[type="password"]  {
   color: blue;
   margin-left: 10px;
   border-bottom: solid 2px #c9c9c9;
   transition: border 0.3s;
 }
 
-.custom-modal input[type="text"]:focus, .custom-modal input[type="password"]:focus {
+.modal input[type="text"]:focus, .modal input[type="password"]:focus {
   border-bottom: solid 2px #969696
 }
 
-.custom-modal input[type="submit"] {
+.modal input[type="submit"] {
   margin-top: 10px;
   color: #00ab6b;
   padding: 10px;
@@ -46,7 +68,7 @@
   border: 1px solid #00ab6b;
 }
 
-.custom-modal input[type="submit"]:hover {
+.modal input[type="submit"]:hover {
   align-items: baseline;
   color: #1c9963;
 }

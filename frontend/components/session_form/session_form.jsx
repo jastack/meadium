@@ -42,10 +42,24 @@ class SessionForm extends React.Component {
 
 	navLink() {
 		if (this.props.formType === "login") {
-			return <Link to="/signup">sign up</Link>;
+			return <h3>Need an acount? <Link to="/signup">Sign up!</Link></h3>;
 		} else {
-			return <Link to="/login">log in</Link>;
+			return <h3>Already have an account? <Link to="/login">Sign in!</Link></h3>;
 		}
+	}
+
+	renderGreet(){
+		if (this.props.formType === 'login') {
+			return (
+				<h3>Sign in to Meadium to connect with voices and perspectives on America's
+				favorite electricity-producing reservoir. </h3>
+			);
+		} else {
+				return (
+						<h3> Sign up for to Meadium to connect with voices and perspectives on America's
+							favorite electricity-producing reservoir. </h3>
+					);
+				}
 	}
 
 	renderErrors() {
@@ -60,6 +74,9 @@ class SessionForm extends React.Component {
 		);
 	}
 
+
+
+
 	destroyErrors() {
 		this.props.errors = [];
 	}
@@ -67,9 +84,14 @@ class SessionForm extends React.Component {
 	render() {
 		return (
 			<div className="login-form-container">
-				<Modal isOpen={true} contentLabel="Modal" onRequestClose={this.closeModal} >
+				<Modal isOpen={true} contentLabel="Modal"
+					onRequestClose={this.closeModal}
+					shouldCloseOnOverlayClick={true}
+					className="modal"
+					overlayClassName="Overlay">
 					<div className="login-form">
 						<h2>MEADIUM</h2>
+						{this.renderGreet()}
 					<form onSubmit={this.handleSubmit} className="login-form-box">
 						{this.renderErrors()}
 							<br/>
@@ -92,6 +114,7 @@ class SessionForm extends React.Component {
 							</label>
 							<br/>
 							<input type="submit" value="Submit" />
+							{this.navLink()}
 					</form>
 				</div>
 			</Modal>

@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jastack/minimum.git"
+    "url": "git+https://github.com/jastack/meadium.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jastack/minimum/issues"
+    "url": "https://github.com/jastack/meadium/issues"
   },
-  "homepage": "https://github.com/jastack/minimum#readme",
+  "homepage": "https://github.com/jastack/meadium#readme",
   "dependencies": {
     "babel-core": "^6.2.0",
     "babel-loader": "^6.2.0",
@@ -31,13 +31,14 @@
     "react-dom": "^15.4.2",
     "react-modal": "^1.7.3",
     "react-redux": "^4.4.5",
-    "react-router": "2.4.x",
+    "react-router": "2.5.2",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
+    "rodal": "^1.4.0",
     "webpack": "^1.12.2"
   },
-    "engines" : {
-      "node": "6.2.1",
-      "npm": "3.9.3"
-    }
+  "engines": {
+    "node": "6.2.1",
+    "npm": "3.9.3"
+  }
 }
