@@ -10,7 +10,6 @@ class SessionForm extends React.Component {
 		this.closeModal = this.closeModal.bind(this);
 		this.clearErrors = this.clearErrors.bind(this);
 		this.guestLogin = this.guestLogin.bind(this);
-		this.test = this.test.bind(this);
 	}
 
 	componentDidUpdate() {
@@ -26,7 +25,6 @@ class SessionForm extends React.Component {
    }
 
 	 closeModal(){
-		 this.setState({modalIsOpen: false});
 		 this.props.router.push('/');
 	 }
 
