@@ -42,9 +42,9 @@ class SessionForm extends React.Component {
 
 	navLink() {
 		if (this.props.formType === "login") {
-			return <h3>Need an acount? <Link to="/signup">Sign up!</Link></h3>;
+			return <h3>Need an account? <Link className="link" to="/signup">Sign up!</Link></h3>;
 		} else {
-			return <h3>Already have an account? <Link to="/login">Sign in!</Link></h3>;
+			return <h3>Already have an account? <Link className="link" to="/login">Sign in!</Link></h3>;
 		}
 	}
 
@@ -74,7 +74,17 @@ class SessionForm extends React.Component {
 		);
 	}
 
-
+	renderSubmit(){
+		if (this.props.formType === 'login') {
+			return (
+					<input type="submit" value="Sign in" />
+			);
+		} else {
+			return (
+				<input type="submit" value="Sign up" />
+			);
+		}
+	}
 
 
 	destroyErrors() {
@@ -113,7 +123,7 @@ class SessionForm extends React.Component {
 									placeholder="password"/>
 							</label>
 							<br/>
-							<input type="submit" value="Submit" />
+							{this.renderSubmit()}
 							{this.navLink()}
 					</form>
 				</div>

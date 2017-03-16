@@ -2,7 +2,7 @@
   width: 74%;
   position: absolute;
   margin-left: 13%;
-  margin-top: 25%;
+  margin-top: 10%;
   background-color: white;
   box-shadow: 10px 10px 5px black;
 }
@@ -19,7 +19,7 @@
 .modal h3 {
   color: black;
   font-size: 16px;
-  margin: 24px;
+  margin: 24px 24px 0px 24px;
   padding-left: 32px;
   padding-right: 32px;
   font-weight: lighter;
@@ -27,6 +27,7 @@
 
 .modal label {
   margin-top: 10px;
+  margin-bottom: 10px;
   color: black;
   font-size: 20px;
 }
@@ -52,9 +53,12 @@
 .modal input[type="text"], .modal input[type="password"]  {
   color: blue;
   margin-left: 10px;
+  margin-top: 10px;
+  width: 80%;
   border-bottom: solid 2px #c9c9c9;
   transition: border 0.3s;
 }
+
 
 .modal input[type="text"]:focus, .modal input[type="password"]:focus {
   border-bottom: solid 2px #969696
@@ -66,6 +70,10 @@
   padding: 10px;
   font-size: 20px;
   border: 1px solid #00ab6b;
+}
+
+.modal a.link {
+  color: #00ab6b;
 }
 
 .modal input[type="submit"]:hover {
