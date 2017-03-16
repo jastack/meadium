@@ -6,6 +6,7 @@ const App = ({ children }) => (
     <header className="main-nav">
       <nav className="left-nav">
         <ul>
+          <li><img src="http://res.cloudinary.com/dopv3qpj7/image/upload/v1489687547/nature_gq8c8x.svg"></img></li>
           <li>Meadium</li>
         </ul>
       </nav>

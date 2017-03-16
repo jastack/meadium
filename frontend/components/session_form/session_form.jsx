@@ -92,7 +92,8 @@ class SessionForm extends React.Component {
 		}
 	}
 
-	guestLogin(){
+	guestLogin(e){
+		e.preventDefault();
 		this.props.login({username: "guest", password: "password"});
 	}
 
@@ -106,10 +107,15 @@ class SessionForm extends React.Component {
 					className="modal"
 					overlayClassName="Overlay">
 					<div className="login-form">
-						<h2>MEADIUM</h2>
+						<header className="head">
+							<img src="http://res.cloudinary.com/dopv3qpj7/image/upload/v1489687547/nature_gq8c8x.svg"></img>
+							<h2>Meadium</h2>
+						</header>
 						{this.renderGreet()}
 					<form onSubmit={this.handleSubmit} className="login-form-box">
-						{this.renderErrors()}
+						<ul>
+							{this.renderErrors()}
+						</ul>
 							<br/>
 							<label> Enter your username and password below:
 								<br />
@@ -129,8 +135,10 @@ class SessionForm extends React.Component {
 									placeholder="your password"/>
 							</label>
 							<br/>
-							<button onClick={this.guestLogin}>Demo</button>
-							{this.renderSubmit()}
+							<div className="buttons">
+								<button onClick={this.guestLogin}>Demo</button>
+								{this.renderSubmit()}
+							</div>
 							{this.navLink()}
 					</form>
 				</div>

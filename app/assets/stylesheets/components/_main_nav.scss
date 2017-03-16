@@ -1,7 +1,15 @@
 .main-nav {
 	display: flex;
 	justify-content: space-between;
+	font-family: 'Roboto Condensed', sans-serif;
 	padding: 0px 20px;
+}
+
+.main-nav img{
+	height: 45px;
+	width: auto;
+	padding-top: 3px;
+	padding-bottom: 7px;
 }
 
 .left-nav > ul,
@@ -17,13 +25,18 @@ li.login-signup.current {
 .left-nav > ul > li {
 	margin-left: 4px;
 	cursor: pointer;
-	font-family: sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 24px;
 	padding: 5px 14px 0px 0px;
 	transition: background-color 0.3s;
 }
 
+.right-nav ul {
+		padding-top: 13px;
+}
+
 .right-nav {
+	height: 50px;
 	margin-right: 20px;
 	text-decoration: none;
 }

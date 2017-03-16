@@ -9,7 +9,7 @@
 
 ## Minimum Viable Product
 
-Meadium is a web application for Lead Mead enthusiasts to write stories, essays, and articles about the lake and surrounding areas and it allows users to follow other authors. It is inspired by Medium and built using Ruby on Rails and React/Redux. At each step I will implement smooth, bug-free navigation, adequate seed data and sufficient CSS styling and by the end of the project period this app will, at a minimum, satisfy the following criteria:
+Meadium is a web application for Lake Mead enthusiasts to write stories, essays, and articles about the lake and surrounding areas and it allows users to follow other authors. It is inspired by Medium and built using Ruby on Rails and React/Redux. At each step I will implement smooth, bug-free navigation, adequate seed data and sufficient CSS styling and by the end of the project period this app will, at a minimum, satisfy the following criteria:
 
 - [ ] Hosting on Heroku
 - [ ] New account creation, login, and guest/demo login
