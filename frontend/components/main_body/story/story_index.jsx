@@ -15,7 +15,7 @@ class StoryIndex extends React.Component {
     if (storyArray[0]) {
       const id = storyArray[0].id;
       return (
-        <div>
+        <div className="index">
           {storyArray.map( story => <StoryIndexItem key={story.id} story={story} />)}
         </div>
       );

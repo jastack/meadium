@@ -20,7 +20,7 @@ const App = ({ children }) => (
     <header className="topics">
       <nav className="sub-topics">
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/index">Home</Link></li>
           <li>Top Stories</li>
           <li>Editor's picks</li>
           <li>Technology</li>

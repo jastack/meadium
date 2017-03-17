@@ -1,27 +1,69 @@
+.index {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
 .storyIndexItem {
   display: flex-box;
+  flex-direction: row;
   font-family: 'Roboto Condensed', sans-serif;
+  background-color: white;
+  margin-bottom: 20px;
 }
+
+.subtitle {
+  margin-top: 7px;
+  color: rgba(0,0,0,.44);
+}
+
+.story-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.tiny-author {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
+.tiny-author h2 {
+  font-size: 14px;
+  color: #00ab6b;
+}
+
+.tiny-author h3 {
+  font-size: 12px;
+  margin: 0;
+  color: rgba(0,0,0,.44)
+}
+
 
 .storyIndexItem a {
   font-size: 34px;
-  padding-left: 20px;
 }
 
-.storyIndexItem h2 {
-  font-size: 24px;
-  padding-left: 20px;
-}
 
 .storyIndexItem img[class="avatar2"] {
-  height: 60px;
+  height: 36px;
   width: auto;
-  clip-path: circle(30px at center)
+  clip-path: circle(18px at center);
 }
 
 .storyIndexItem img {
   float: left;
   width: 40%;
   height: auto;
-  border: 1px solid rgba(0,0,0,.44)
 }

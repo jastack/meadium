@@ -4,6 +4,8 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
 import StoryDetailContainer from './main_body/story/story_detail_container';
+import StoryIndexContainer from './main_body/story/story_index_container';
+
 
 const Root = ({ store }) => {
 
@@ -25,6 +27,7 @@ const Root = ({ store }) => {
     <Provider store={ store }>
       <Router history={ hashHistory }>
       <Route path="/" component={ App }>
+        <Route path="/index" component={ StoryIndexContainer } />
         <Route path="/login" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn}/>
         <Route path="/signup" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn}/>
         <Route path="/:id" component={ StoryDetailContainer } />

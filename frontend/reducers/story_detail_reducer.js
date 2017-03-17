@@ -8,7 +8,8 @@ const defaultStory = {
   author: "",
   image_url: "",
   description: "",
-  avatar_url: ""
+  avatar_url: "",
+  subtitle: ""
 };
 
 
