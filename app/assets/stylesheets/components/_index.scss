@@ -1,0 +1,27 @@
+.storyIndexItem {
+  display: flex-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.storyIndexItem a {
+  font-size: 34px;
+  padding-left: 20px;
+}
+
+.storyIndexItem h2 {
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.storyIndexItem img[class="avatar2"] {
+  height: 60px;
+  width: auto;
+  clip-path: circle(30px at center)
+}
+
+.storyIndexItem img {
+  float: left;
+  width: 40%;
+  height: auto;
+  border: 1px solid rgba(0,0,0,.44)
+}

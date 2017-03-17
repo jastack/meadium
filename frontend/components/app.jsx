@@ -1,5 +1,9 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
+import MainContainer from './main_body/main_container';
+import StoryIndexContainer from './main_body/story/story_index_container';
+import { Link } from 'react-router';
+
 
 const App = ({ children }) => (
   <div>
@@ -16,7 +20,7 @@ const App = ({ children }) => (
     <header className="topics">
       <nav className="sub-topics">
         <ul>
-          <li>Home</li>
+          <li><Link to="/">Home</Link></li>
           <li>Top Stories</li>
           <li>Editor's picks</li>
           <li>Technology</li>
@@ -27,7 +31,7 @@ const App = ({ children }) => (
         </ul>
       </nav>
     </header>
-
+    <MainContainer />
     { children }
   </div>
 );

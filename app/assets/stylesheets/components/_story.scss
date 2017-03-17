@@ -1,0 +1,51 @@
+.story section[class="author"] {
+  display: flex;
+  color: black;
+  padding: 20px 20px 20px 20px;
+}
+
+.story section[class="author"] div {
+  padding-left: 15px;
+}
+
+.info {
+  display: flex-box;
+}
+
+.name {
+}
+
+.story section[class="author"] h3 {
+  color: rgba(0,0,0,.44);
+  font-size: 13px;
+  margin: 0;
+}
+
+.story section[class="body"] {
+}
+
+.header-image {
+}
+
+.avatar {
+  height: 60px;
+  width: auto;
+  clip-path: circle(30px at center)
+}
+
+.story h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 32px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.story p {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 20px 20px 20px 20px;
+}
+
+.story h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}

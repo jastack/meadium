@@ -1,11 +1,23 @@
 .modal {
   width: 400px;
-  position: absolute;
+  display: flex;
   margin-left: 25%;
   margin-top: 100px;
   font-family: 'Roboto Condensed', sans-serif;
   background-color: white;
   box-shadow: 10px 10px 5px black;
+}
+
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 1s ease-in-out;
+  background: black;
+  opacity: .5;
 }
 
 .modal div[class="buttons"]{
@@ -50,16 +62,6 @@
   font-size: 20px;
 }
 
-.Overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: opacity 1s ease-in-out;
-    background: black;
-    opacity: .5;
-  }
 
 .modal form {
   display: flex-box;
