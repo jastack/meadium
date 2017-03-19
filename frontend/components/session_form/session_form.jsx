@@ -7,7 +7,6 @@ class SessionForm extends React.Component {
 		super(props);
 		this.state = { username: "", password: "" };
 		this.handleSubmit = this.handleSubmit.bind(this);
-		this.closeModal = this.closeModal.bind(this);
 		this.clearErrors = this.clearErrors.bind(this);
 		this.guestLogin = this.guestLogin.bind(this);
 	}
@@ -20,17 +19,9 @@ class SessionForm extends React.Component {
 		this.props.clearErrors();
 	}
 
-	componentWillMount() {
-    Modal.setAppElement('body');
-   }
-
-	 closeModal(){
-		 this.props.router.push('/');
-	 }
-
 	redirectIfLoggedIn() {
 		if (this.props.loggedIn) {
-			this.props.router.push("/");
+			this.props.router.push("/index");
 		}
 	}
 
@@ -43,15 +34,7 @@ class SessionForm extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		const user = this.state;
-		this.props.processForm(user);
-	}
-
-	navLink() {
-		if (this.props.formType === "login") {
-			return <h3>Need an account? <Link className="link" to="/signup" onClick={this.clearErrors} >Sign up!</Link></h3>;
-		} else {
-			return <h3>Already have an account? <Link className="link" to="/login" onClick={this.clearErrors} >Sign in!</Link></h3>;
-		}
+		this.props.processForm(user).then(this.props.closeModal);
 	}
 
 	renderGreet(){
@@ -62,22 +45,26 @@ class SessionForm extends React.Component {
 			);
 		} else {
 				return (
-						<h3> Sign up for to Meadium to connect with voices and perspectives on America's
+						<h3> Sign up for Meadium to connect with voices and perspectives on America's
 							favorite electricity-producing reservoir. </h3>
 					);
 				}
 	}
 
 	renderErrors() {
-		return(
-			<ul>
-				{this.props.errors.map((error, i) => (
-					<li key={`error-${i}`}>
-						{error}
-					</li>
-				))}
-			</ul>
-		);
+		if (this.props.errors) {
+			return(
+				<ul>
+					{this.props.errors.map((error, i) => (
+						<li key={`error-${i}`}>
+							{error}
+						</li>
+					))}
+				</ul>
+			);
+		} else {
+			return (<div></div>);
+		}
 	}
 
 	renderSubmit(){
@@ -92,20 +79,16 @@ class SessionForm extends React.Component {
 		}
 	}
 
+
 	guestLogin(e){
 		e.preventDefault();
-		this.props.login({username: "guest", password: "password"});
+		this.props.login({username: "guest", password: "password"}).then(this.props.closeModal);
 	}
 
 
 	render() {
 		return (
 			<div className="login-form-container">
-				<Modal isOpen={true} contentLabel="Modal"
-					onRequestClose={this.closeModal}
-					shouldCloseOnOverlayClick={true}
-					className="modal"
-					overlayClassName="Overlay">
 					<div className="login-form">
 						<header className="head">
 							<img src="http://res.cloudinary.com/dopv3qpj7/image/upload/v1489687547/nature_gq8c8x.svg"></img>
@@ -139,10 +122,8 @@ class SessionForm extends React.Component {
 								<button onClick={this.guestLogin}>Demo</button>
 								{this.renderSubmit()}
 							</div>
-							{this.navLink()}
 					</form>
 				</div>
-			</Modal>
 			</div>
 		);
 	}

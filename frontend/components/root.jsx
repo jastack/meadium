@@ -28,8 +28,6 @@ const Root = ({ store }) => {
       <Router history={ hashHistory }>
       <Route path="/" component={ App }>
         <Route path="/index" component={ StoryIndexContainer } />
-        <Route path="/login" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn}/>
-        <Route path="/signup" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn}/>
         <Route path="/:id" component={ StoryDetailContainer } />
     </Route>
     </Router>
