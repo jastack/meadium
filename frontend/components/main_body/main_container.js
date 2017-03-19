@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import Main from './main';
 import { fetchStory } from '../../actions/story_actions';
+import { withRouter } from 'react-router';
 
 const mapStateToProps = (state, ownProps) => ({
   stories: state.stories

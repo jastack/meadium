@@ -10,6 +10,8 @@
 }
 
 .overlay2 {
+  display: flex-box;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,8 +23,12 @@
 }
 
 .modal {
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
   width: 400px;
-  margin-left: 25%;
   margin-top: 100px;
   font-family: 'Roboto Condensed', sans-serif;
   background-color: white;
