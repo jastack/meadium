@@ -8,6 +8,8 @@
 #  session_token   :string           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  avatar_url      :string
+#  description     :text
 #
 
 class User < ApplicationRecord
@@ -21,6 +23,21 @@ class User < ApplicationRecord
     primary_key: :id,
     foreign_key: :author_id,
     class_name: :Story
+
+  has_many :likes,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: :Like
+
+  has_many :followers,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Follow
+
+  has_many :following,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: :Follow
 
   after_initialize :ensure_session_token
   before_validation :ensure_session_token_uniqueness

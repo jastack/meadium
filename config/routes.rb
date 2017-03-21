@@ -3,8 +3,22 @@ Rails.application.routes.draw do
   root to: "static_pages#root"
 
   namespace :api, defaults: { format: :json } do
+    resources :authors, only: [:index, :show] do
+      resources :follows, only: [:create, :destroy] do
+        collection do
+          get "followers"
+          get "following"
+        end
+      end
+
+
+    end
+
     resource :user, only: [:create]
     resource :session, only: [:create, :destroy, :show]
-    resources :stories, only: [:index, :show, :create]
+    resources :stories, only: [:index, :show, :create] do
+      resources :comments, only: [:index, :create]
+      resources :likes, only: [:index, :create, :destroy]
+    end
   end
 end

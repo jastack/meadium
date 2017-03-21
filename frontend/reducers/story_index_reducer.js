@@ -5,6 +5,7 @@ const defaultStory = {
   id: "",
   title: "",
   author: "",
+  author_id: "",
   image_url: "",
   avatar_url: "",
   subtitle: ""

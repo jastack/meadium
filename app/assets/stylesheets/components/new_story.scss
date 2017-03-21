@@ -1,0 +1,28 @@
+.createStoryAuthor {
+  display: flex;
+  flex-direction: row;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.createStoryAuthor h2 {
+  font-size: 16px;
+}
+
+.createStoryAuthor h3 {
+  color: rgba(0,0,0,.44);
+  font-size: 12px;
+}
+
+.editor {
+  margin-left: 50px;
+  margin-right: 20px;
+  padding-top: 35px;
+}
+
+.editor input[type="text"] {
+  font-size: 16px;
+}

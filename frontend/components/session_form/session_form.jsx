@@ -11,19 +11,12 @@ class SessionForm extends React.Component {
 		this.guestLogin = this.guestLogin.bind(this);
 	}
 
-	componentDidUpdate() {
-		this.redirectIfLoggedIn();
-	}
+	
 
 	clearErrors(){
 		this.props.clearErrors();
 	}
 
-	redirectIfLoggedIn() {
-		if (this.props.loggedIn) {
-			this.props.router.push("/index");
-		}
-	}
 
 	update(field) {
 		return e => this.setState({
@@ -82,7 +75,7 @@ class SessionForm extends React.Component {
 
 	guestLogin(e){
 		e.preventDefault();
-		this.props.login({username: "guest", password: "password"}).then(this.props.closeModal);
+		this.props.login({username: "Harry", password: "password"}).then(this.props.closeModal);
 	}
 
 

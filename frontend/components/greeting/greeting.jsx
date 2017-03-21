@@ -33,7 +33,8 @@ class Greeting extends React.Component {
   personalGreeting(currentUser, logout) {
   	return (<nav className="right-nav">
       <ul>
-        <li>{currentUser.username}</li>
+        <li><Link to="/create">Write a story</Link></li>
+        <li><Link to={`/authors/${currentUser.id}`}>{currentUser.username}</Link></li>
         <li><button className="header-button" onClick={logout}>Log Out</button></li>
         <li className="search-modal"><i className="fa fa-search"></i></li>
       </ul>

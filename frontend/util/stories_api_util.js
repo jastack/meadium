@@ -11,3 +11,11 @@ export const fetchStory = id => (
     url: `/api/stories/${id}`
   })
 );
+
+export const createStory = story => (
+  $.ajax({
+    method: "POST",
+    url: "/api/stories",
+    data: { story }
+  })
+);

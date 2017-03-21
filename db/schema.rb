@@ -10,10 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170317223452) do
+ActiveRecord::Schema.define(version: 20170320213036) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "story_id",   null: false
+    t.integer  "user_id",    null: false
+    t.text     "comment",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["story_id", "user_id"], name: "index_comments_on_story_id_and_user_id", using: :btree
+  end
+
+  create_table "follows", force: :cascade do |t|
+    t.integer  "author_id",  null: false
+    t.integer  "user_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["author_id", "user_id"], name: "index_follows_on_author_id_and_user_id", using: :btree
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.integer  "story_id",   null: false
+    t.integer  "user_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["story_id", "user_id"], name: "index_likes_on_story_id_and_user_id", using: :btree
+  end
 
   create_table "stories", force: :cascade do |t|
     t.string   "title",      null: false
@@ -23,6 +48,7 @@ ActiveRecord::Schema.define(version: 20170317223452) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text     "subtitle"
+    t.integer  "likes"
     t.index ["title", "author_id"], name: "index_stories_on_title_and_author_id", using: :btree
   end
 

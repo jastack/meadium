@@ -5,6 +5,8 @@ import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
 import StoryDetailContainer from './main_body/story/story_detail_container';
 import StoryIndexContainer from './main_body/story/story_index_container';
+import NewStoryContainer from './main_body/story/new_story_container';
+import AuthorContainer from './main_body/author/author_container';
 
 
 const Root = ({ store }) => {
@@ -14,8 +16,10 @@ const Root = ({ store }) => {
       <Router history={ hashHistory }>
       <Route path="/" component={ App }>
         <Route path="/index" component={ StoryIndexContainer } />
+        <Route path="/create" component={ NewStoryContainer } />
         <Route path="/:id" component={ StoryDetailContainer } />
-    </Route>
+        <Route path="/authors/:author_id" component={ AuthorContainer } />
+      </Route>
     </Router>
   </Provider>);
 };

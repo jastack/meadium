@@ -6,10 +6,13 @@ const defaultStory = {
   title: "",
   body: "",
   author: "",
+  author_id: "",
   image_url: "",
   description: "",
   avatar_url: "",
-  subtitle: ""
+  subtitle: "",
+  comments: "",
+  likes: []
 };
 
 

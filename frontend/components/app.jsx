@@ -1,7 +1,6 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
-import MainContainer from './main_body/main_container';
-import StoryIndexContainer from './main_body/story/story_index_container';
+
 import { Link } from 'react-router';
 
 
@@ -31,7 +30,6 @@ const App = ({ children }) => (
         </ul>
       </nav>
     </header>
-    <MainContainer />
     { children }
   </div>
 );

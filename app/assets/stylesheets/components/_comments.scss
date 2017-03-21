@@ -1,0 +1,38 @@
+.comments {
+  padding: 20px;
+}
+
+.comments h2 {
+  color: rgba(0,0,0,.44);
+  padding-left: 20%;
+  padding-bottom: 30px;
+}
+
+.comments form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid rgba(0,0,0,.44);
+}
+
+.comments textarea {
+  margin: auto;
+  resize: none;
+}
+
+.comments input[type="submit"]{
+
+}
+
+.allComments {
+  border: 1px solid gray;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+
+.comments ul {
+  list-style: none;
+}

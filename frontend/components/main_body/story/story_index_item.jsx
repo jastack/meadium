@@ -12,7 +12,7 @@ const StoryIndexItem = ({ story, router }) => (
       <div className="author-info">
         <img className="avatar2" src={story.avatar_url} />
         <div className="tiny-author">
-          <h2>{story.author}</h2>
+          <Link className="h2" to={`/authors/${story.author_id}`}>{story.author}</Link>
           <h3>Mar 17</h3>
         </div>
       </div>
