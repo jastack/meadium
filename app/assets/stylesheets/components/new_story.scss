@@ -8,6 +8,7 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 .createStoryAuthor h2 {
   font-size: 16px;
 }
@@ -15,6 +16,10 @@
 .createStoryAuthor h3 {
   color: rgba(0,0,0,.44);
   font-size: 12px;
+}
+
+.editor textarea {
+  resize: none;
 }
 
 .editor {

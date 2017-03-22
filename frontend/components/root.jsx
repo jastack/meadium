@@ -7,7 +7,7 @@ import StoryDetailContainer from './main_body/story/story_detail_container';
 import StoryIndexContainer from './main_body/story/story_index_container';
 import NewStoryContainer from './main_body/story/new_story_container';
 import AuthorContainer from './main_body/author/author_container';
-
+import StoryPreviewContainer from './main_body/story/story_preview_container';
 
 const Root = ({ store }) => {
 

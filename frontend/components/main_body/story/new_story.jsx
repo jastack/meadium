@@ -1,12 +1,17 @@
 import React from 'react';
-import { withRouter } from 'react-router';
+import { withRouter, Link, hashHistory } from 'react-router';
 
 
 class NewStory extends React.Component {
   constructor(props){
     super(props);
-    this.state = { title: "", body: "", image_url: "", subtitle: "", author_id: this.props.author.id };
+    this.state = { title: "", body: "", image_url: "", subtitle: "", author_id: this.props.author.id, mode: "edit" };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.renderForm = this.renderForm.bind(this);
+    this.renderPreview = this.renderPreview.bind(this);
+    this.preview = this.preview.bind(this);
+    this.handleRender = this.handleRender.bind(this);
+    this.edit = this.edit.bind(this);
   }
 
   update(field) {
@@ -18,16 +23,49 @@ class NewStory extends React.Component {
   handleSubmit(e){
     e.preventDefault();
     const story = this.state;
-    this.props.createStory(story);
+    this.props.createStory(story).then(hashHistory.push(`/authors/${this.state.author_id}`));
   }
 
-  render(){
+  renderPreview(){
+    const author = this.props.author.username;
+    const title = this.state.title;
+    const body = this.state.body;
+    const imageUrl = this.state.image_url;
+    const avatarUrl = this.props.author.avatar_url;
+    const authorDescription = this.props.author.description;
+    const authorId = this.state.author_id;
+    const subtitle = this.state.subtitle;
+
+    return(
+      <div className="background">
+        <div className='story'>
+          <section className="author">
+            <img className="avatar" src={avatarUrl}></img>
+            <div className="info">
+              <h2 className="name"><Link to={`/authors/${authorId}`}>{author}</Link></h2>
+              <button className="follow">Follow</button>
+              <h3 className="description">{authorDescription}</h3>
+            </div>
+          </section>
+
+          <section className="body">
+            <h1>{title}</h1>
+            <img className="header-image" src={imageUrl} />
+            <p>{body}</p>
+          </section>
+        </div>
+        <button onClick={this.handleSubmit}>Publish!</button>
+        <button onClick={this.edit}>Edit</button>
+      </div>
+    );
+  }
+
+  renderForm(){
     const avatarUrl = this.props.author.avatar_url;
     const author = this.props.author.username;
     const description = this.props.author.description;
     return(
       <div>
-
         <div className="createStoryAuthor">
             <img className="avatar" src={avatarUrl}></img>
             <div className="info">
@@ -40,7 +78,7 @@ class NewStory extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <label>
               <input type="text"
-                value={this.state.username}
+                value={this.state.title}
                 onChange={this.update("title")}
                 placeholder="Title" />
             </label>
@@ -57,15 +95,6 @@ class NewStory extends React.Component {
             <br />
 
             <label>
-              <textarea
-                value={this.state.body}
-                onChange={this.update("body")}
-                placeholder="your great story"/>
-            </label>
-            <br />
-            <br />
-
-            <label>
               <input type="text"
                 value={this.state.image_url}
                 onChange={this.update("image_url")}
@@ -74,10 +103,45 @@ class NewStory extends React.Component {
 
             <br />
             <br />
-            <input type="submit" value="Publish"/>
-          </form>
 
+            <label>
+              <textarea
+                value={this.state.body}
+                onChange={this.update("body")}
+                placeholder="your great story"/>
+            </label>
+
+            <br />
+            <br />
+          </form>
         </div>
+        <button onClick={this.preview}>Preview</button>
+      </div>
+    );
+  }
+
+  preview(e){
+    e.preventDefault();
+    this.setState({mode: "preview"});
+  }
+
+  edit(e){
+    e.preventDefault();
+    this.setState({mode: "edit"});
+  }
+
+  handleRender(){
+    if (this.state.mode === "edit") {
+      return this.renderForm();
+    } else {
+      return this.renderPreview();
+    }
+  }
+
+  render(){
+    return(
+      <div>
+        {this.handleRender()}
       </div>
     );
   }

@@ -1,11 +1,13 @@
 import React from 'react';
-import { withRouter } from 'react-router';
+import { withRouter, Link } from 'react-router';
+import CommentsItem from './comments_item';
 
 class Comments extends React.Component {
   constructor(props){
     super(props);
     this.state={user_id: this.props.currentUser.id, story_id: this.props.storyId, comment: ""};
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.renderComments = this.renderComments.bind(this);
   }
 
   handleSubmit(e){
@@ -28,13 +30,20 @@ class Comments extends React.Component {
     this.setState({story_id: this.props.storyId});
   }
 
-  render(){
-    const comments = this.props.comments;
-    let commentsArray;
-    if (comments[0]){
-      commentsArray = comments.map(comment => <li key={comment.id}>{comment.comment}</li>);
+  renderComments(){
+    let comments = this.props.comments;
+    if (comments[0]) {
+      return (
+        comments.map(comment => <CommentsItem key={comment.id} comment={comment} />)
+      );
+    } else {
+      return (
+        <div>No comments!</div>
+      );
     }
+  }
 
+  render(){
     return (
       <div>
         <section className="comments">
@@ -42,20 +51,27 @@ class Comments extends React.Component {
 
           <section className="newComment">
             <form onSubmit={this.handleSubmit}>
+              <div className="author-info">
+                <img className="avatar2" src={this.props.currentUser.avatar_url} />
+                <div className="tiny-author">
+                  <Link className="h2" to={`/authors/${this.props.currentUser.user_id}`}>{this.props.currentUser.username}</Link>
+                </div>
+              </div>
               <label>
                 <textarea
                   value={this.state.comment}
                   onChange={this.update("comment")}
-                  placeholder="new comment"/>
+                  placeholder="your response here..."/>
 
               </label>
               <input type="submit" value="Publish"/>
             </form>
           </section>
 
-        <ul className="allComments">
-          <p>{commentsArray}</p>
-        </ul>
+        <div className="commentIndexItem">
+          {this.renderComments()}
+          {this.props.children}
+        </div>
 
 
         </section>

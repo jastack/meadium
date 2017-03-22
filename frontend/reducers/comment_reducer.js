@@ -6,6 +6,8 @@ const defaultComment = {
   user_id: "",
   story_id: "",
   comment: "",
+  username: "",
+  avatarUrl: ""
 };
 
 

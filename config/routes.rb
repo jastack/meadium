@@ -14,7 +14,12 @@ Rails.application.routes.draw do
 
     end
 
-    resource :user, only: [:create]
+    resource :user, only: [:create] do
+      collection do
+        get "feed"
+      end  
+    end
+
     resource :session, only: [:create, :destroy, :show]
     resources :stories, only: [:index, :show, :create] do
       resources :comments, only: [:index, :create]
