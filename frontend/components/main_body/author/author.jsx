@@ -19,7 +19,7 @@ class Author extends React.Component {
     const authorId = this.props.params.author_id;
     if (this.props.currentUser){
       const userId = this.props.currentUser.id;
-      this.props.createFollow(userId, authorId);
+      this.props.createFollow(authorId, userId);
     }
   }
 
@@ -30,9 +30,10 @@ class Author extends React.Component {
     const followingCount = this.props.following.length;
     const followersCount = this.props.followers.length;
     const avatarUrl = this.props.author.avatarUrl;
+
     let storiesShow;
     if (stories) {
-      storiesShow = stories.map(story => <AuthorIndexItem story={story} key={`story-${story.id}-${story.title}`}/>);
+      storiesShow = stories.map(story => <AuthorIndexItem id={this.props.params.author_id} username={username} avatarUrl={avatarUrl} story={story} key={`story-${story.id}-${story.title}`}/>);
     }
     return (
       <div className="author-page">
@@ -40,6 +41,9 @@ class Author extends React.Component {
           <div className="info2">
             <h2>{username}</h2>
             <h3>{description}</h3>
+            <li>{followingCount} Following</li>
+            <li>{followersCount} Followers</li>
+            <button onClick={this.follow}>Follow this author!</button>
           </div>
           <img src={avatarUrl} />
         </div>
@@ -52,11 +56,6 @@ class Author extends React.Component {
         {storiesShow}
       </div>
 
-        <ul>
-          <li>Following: {followingCount}</li>
-          <li>Followers: {followersCount}</li>
-        </ul>
-        <button onClick={this.follow}>Follow this author!</button>
       </div>
     );
   }

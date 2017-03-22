@@ -44,28 +44,34 @@ class Story extends React.Component {
       commentSection = comments.map(comment => (comment.comment));
     }
     return (
-      <div className='story'>
-        <section className="author">
-          <img className="avatar" src={avatarUrl}></img>
-          <div className="info">
-            <h2 className="name"><Link to={`/authors/${authorId}`}>{author}</Link></h2>
-            <button className="follow">Follow</button>
-            <h3 className="description">{description}</h3>
-          </div>
-        </section>
+      <div className="background">
+        <div className='story'>
+          <section className="author">
+            <img className="avatar" src={avatarUrl}></img>
+            <div className="info">
+              <h2 className="name"><Link to={`/authors/${authorId}`}>{author}</Link></h2>
+              <button className="follow">Follow</button>
+              <h3 className="description">{description}</h3>
+            </div>
+          </section>
 
-        <section className="body">
-          <h1>{title}</h1>
-          <img className="header-image" src={imageUrl} />
-          <p>{body}</p>
-        </section>
+          <section className="body">
+            <h1>{title}</h1>
+            <img className="header-image" src={imageUrl} />
+            <p>{body}</p>
+          </section>
+          
+          <section className="likes">
+            <LikesContainer />
+          </section>
+        </div>
 
-        <section className="likes">
-          <LikesContainer />
-        </section>
+        <div className="responses">
 
-        {this.comments(id)}
-        {this.props.children}
+        </div>
+
+          {this.comments(id)}
+          {this.props.children}
       </div>
     );
   }

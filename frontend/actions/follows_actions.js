@@ -12,7 +12,7 @@ export const fetchAllFollowing = (userId) => dispatch => (
 
 export const createFollow = (authorId, userId) => dispatch => (
   APIUtil.newFollow(authorId, userId)
-    .then(result => dispatch(receiveSingleFollowing(result)))
+    .then(result => dispatch(receiveSingleFollowers(result)))
 );
 
 export const receiveAllFollowing = following => ({

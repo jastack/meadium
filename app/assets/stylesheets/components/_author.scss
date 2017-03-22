@@ -62,8 +62,8 @@
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
-
-
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .authorIndexItem img[class="avatar2"] {
@@ -73,14 +73,38 @@
   clip: rect(0px, 0px, 0px, 0px);
 }
 
+
+
 .authorIndexItem img {
-  float: left;
-  width: 40%;
+  align-self: center;
+  width: 80%;
   height: auto;
+  clip: rect(0px,0px,0px,0px);
 }
 
 .stories-index {
   display: flex;
   flex-direction: column;
   background-color: #fafafa
+}
+
+.story-info {
+  display: flex-box;
+  flex-direction: column;
+}
+
+.story-info img[class="author"] {
+  margin-top: 30px;
+}
+
+.story-info a[class="title"] {
+  padding-top: 10px;
+  font-size: 28px;
+}
+
+.story-info h2[class="read"]{
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 10px;
+  font-size: 18px;
 }

@@ -1,5 +1,10 @@
 .story {
   z-index: 1;
+  background-color: #fff;
+}
+
+.background {
+  background-color: #fafafa
 }
 
 .story section[class="author"] {
@@ -54,4 +59,20 @@
 
 .responses {
   color: red;
+}
+
+
+.svgIcon-use {
+  fill: #00ab6b;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.likes li {
+  padding-left: 10px;
+  color: rgba(0,0,0,.44);
 }
