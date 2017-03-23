@@ -11,11 +11,6 @@ class Api::UsersController < ApplicationController
     end
   end
 
-  def feed
-    feed_array = User.find(params).feed_authors
-    @feed = feed_array.map(&:stories).flatten
-    render :feed
-  end
 
   private
 

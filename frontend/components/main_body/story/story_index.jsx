@@ -1,12 +1,16 @@
 import React from 'react';
 import StoryIndexItem from './story_index_item';
-import {Link } from 'react-router';
+import { Link } from 'react-router';
+import FeedContainer from '../feed/feed_container';
 
 class StoryIndex extends React.Component {
   constructor(props) {
     super(props);
 
     this.storiesArray = this.storiesArray.bind(this);
+    this.renderHome = this.renderHome.bind(this);
+    this.renderFeed = this.renderFeed.bind(this);
+    this.renderPage = this.renderPage.bind(this);
   }
 
   componentDidMount(){
@@ -22,7 +26,23 @@ class StoryIndex extends React.Component {
     }
   }
 
-  render(){
+  renderFeed(){
+    return(
+      <div>
+        <FeedContainer />
+      </div>
+    );
+  }
+
+  renderPage(){
+    if (this.props.currentUser) {
+      return this.renderFeed();
+    } else {
+      return this.renderHome();
+    }
+  }
+
+  renderHome(){
     const storyArray = this.storiesArray();
     if (storyArray[0]) {
       return (
@@ -40,6 +60,14 @@ class StoryIndex extends React.Component {
           <div>Loading...</div>
         );
       }
+  }
+
+  render(){
+    return(
+      <div>
+        {this.renderPage()}
+      </div>
+    );
   }
 }
 

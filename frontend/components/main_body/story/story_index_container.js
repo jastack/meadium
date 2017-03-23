@@ -3,8 +3,11 @@ import { fetchAllStories } from '../../../actions/story_actions';
 import StoryIndex from './story_index';
 import {selectAllStories} from '../../../reducers/selectors';
 
-const mapStateToProps = ({storyIndex}) => {
-  return ({stories: storyIndex} );
+const mapStateToProps = ({storyIndex, session}) => {
+  return ({
+    stories: storyIndex,
+    currentUser: session.currentUser
+  });
 };
 
 const mapDispatchToProps = dispatch => ({

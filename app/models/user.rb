@@ -52,6 +52,11 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
   before_validation :ensure_session_token_uniqueness
 
+  def feeds(user_id)
+    following_array = User.find(user_id).following
+    following_author_id = following_array.map(&:author_id)
+    return Story.where(author_id: following_author_id)
+  end
 
   def password=(password)
     self.password_digest = BCrypt::Password.create(password)
