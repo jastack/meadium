@@ -11,7 +11,7 @@ class SessionForm extends React.Component {
 		this.guestLogin = this.guestLogin.bind(this);
 	}
 
-	
+
 
 	clearErrors(){
 		this.props.clearErrors();
@@ -75,7 +75,7 @@ class SessionForm extends React.Component {
 
 	guestLogin(e){
 		e.preventDefault();
-		this.props.login({username: "Harry", password: "password"}).then(this.props.closeModal);
+		this.props.login({username: "Harry", password: "password1"}).then(this.props.closeModal);
 	}
 
 

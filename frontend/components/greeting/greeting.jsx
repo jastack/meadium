@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, hashHistory } from 'react-router';
 import Modal from 'react-modal';
 import SessionFormContainer from '../session_form/session_form_container';
 
@@ -17,6 +17,7 @@ class Greeting extends React.Component {
     this.renderButtons = this.renderButtons.bind(this);
     this.sessionLinks = this.sessionLinks.bind(this);
     this.overlay = this.overlay.bind(this);
+    this.signout = this.signout.bind(this);
   }
 
   sessionLinks() {
@@ -30,12 +31,18 @@ class Greeting extends React.Component {
     </nav>);
   }
 
+  signout(e){
+    e.preventDefault();
+    hashHistory.push('/');
+    this.props.logout();
+  }
+
   personalGreeting(currentUser, logout) {
   	return (<nav className="right-nav">
       <ul>
         <li><Link to="/create">Write a story</Link></li>
         <li><Link to={`/authors/${currentUser.id}`}>{currentUser.username}</Link></li>
-        <li><button className="header-button" onClick={logout}>Log Out</button></li>
+        <li><button className="header-button" onClick={this.signout}>Log Out</button></li>
         <li className="search-modal"><i className="fa fa-search"></i></li>
       </ul>
   	</nav>);
