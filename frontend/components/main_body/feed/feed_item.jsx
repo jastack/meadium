@@ -8,7 +8,6 @@ class FeedItem extends React.Component {
   }
 
   render(){
-    console.log(this.props);
     const avatarUrl = this.props.story.avatar_url;
     const id = this.props.story.author_id;
     const story = this.props.story;

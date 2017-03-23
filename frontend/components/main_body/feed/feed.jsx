@@ -11,8 +11,10 @@ class Feed extends React.Component {
   }
 
   componentDidMount(){
-    const id = this.userId();
-    this.props.fetchFeed(1);
+    if (this.props.currentUser) {
+      const id = this.userId();
+      this.props.fetchFeed(id);
+    }
   }
 
   userId(){

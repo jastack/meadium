@@ -22,9 +22,15 @@ class Follow extends React.Component {
     }
   }
 
+  componentDidMount(){
+    if (this.signedIn()) {
+      this.props.fetchAllFollowing(this.props.currentUser.id);
+    }
+  }
+
   followArray(){
     if (this.signedIn()) {
-      const array = this.props.currentUser.following.map( author => author.author_id);
+      const array = this.props.following.map( author => author.author_id);
       return array;
     } else {
       return [];
@@ -54,7 +60,7 @@ class Follow extends React.Component {
   findFollowId(){
     const followArray = this.followArray();
     const authorId = this.props.storyDetail.author_id;
-    const followDetailsArray = this.props.currentUser.following;
+    const followDetailsArray = this.props.following;
     let id;
     for (var i = 0; i < followArray.length; i++) {
       if (followArray[i] === authorId) {
