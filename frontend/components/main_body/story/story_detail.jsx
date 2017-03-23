@@ -2,13 +2,13 @@ import React from 'react';
 import { withRouter, Link } from 'react-router';
 import CommentsContainer from './comments_container';
 import LikesContainer from './likes_container';
+import FollowsContainer from '../author/follows_container';
+
 
 class Story extends React.Component {
   constructor(props){
     super(props);
     this.comments = this.comments.bind(this);
-    this.follow = this.follow.bind(this);
-    this.signedInCheck = this.signedInCheck.bind(this);
 
   }
 
@@ -19,17 +19,9 @@ class Story extends React.Component {
 
   comments(id){
     if (this.props.currentUser) {
-      return <CommentsContainer storyId={id}/>;
+      return ;
     } else {
       return <h2>You must be logged in to see comments</h2>;
-    }
-  }
-
-  follow(){
-    const authorId = this.props.details.author_id;
-    if (this.props.currentUser){
-      const userId = this.props.currentUser.id;
-      this.props.createFollow(authorId, userId);
     }
   }
 
@@ -47,20 +39,6 @@ class Story extends React.Component {
     }
   }
 
-  likes(){
-    if (this.signedInCheck()){
-      return (
-        <section className="likes">
-          <LikesContainer />
-        </section>
-      );
-    } else {
-      return (
-        <h2>Must be signed in to like!</h2>
-      );
-    }
-  }
-
   render(){
     const id = this.props.location.pathname.slice(1);
     const author = this.props.details.author;
@@ -71,6 +49,7 @@ class Story extends React.Component {
     const description = this.props.details.description;
     const comments = this.props.details.comments;
     const authorId = this.props.details.author_id;
+    const subtitle = this.props.details.subtitle;
     let commentSection;
     if (comments) {
       commentSection = comments.map(comment => (comment.comment));
@@ -82,26 +61,31 @@ class Story extends React.Component {
           <section className="author">
             <img className="avatar" src={avatarUrl}></img>
             <div className="info">
-              <h2 className="name"><Link to={`/authors/${authorId}`}>{author}</Link></h2>
-              <button onClick={this.follow} className="follow">Follow</button>
+              <div className="author-follow">
+                <h2 className="name"><Link to={`/authors/${authorId}`}>{author}</Link></h2>
+                <FollowsContainer />
+              </div>
               <h3 className="description">{description}</h3>
             </div>
           </section>
 
           <section className="body">
             <h1>{title}</h1>
+            <h2>{subtitle}</h2>
             <img className="header-image" src={imageUrl} />
             <p>{body}</p>
           </section>
 
-          {this.likes()}
+          <section className="likes">
+            <LikesContainer />
+          </section>
         </div>
 
         <div className="responses">
 
         </div>
 
-          {this.comments(id)}
+          <CommentsContainer storyId={id}/>
           {this.props.children}
       </div>
     );

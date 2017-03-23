@@ -11,14 +11,24 @@
 .comments form {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
-.comments textarea {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin: auto;
-  resize: none;
+.space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: #00ab6b;
+}
+
+.button[class="show-comments"] {
+  color: #00ab6b
+}
+
+.comments div[class="author-info"] {
+  padding-bottom: 20px;
 }
 
 .comments input[type="submit"]{
@@ -39,6 +49,7 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 50px;
 }
 
 .newComment {
@@ -81,6 +92,13 @@
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 20px;
+}
+
+.newComment textarea {
+  resize: none;
+  padding-top: 10px;
+  width: 497px;
+  height: 36px;
 }
 
 .comments ul {

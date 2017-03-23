@@ -35,7 +35,7 @@ User.create(username: "Aaron", password: "password1" , avatar_url: avatar3 , des
 User.create(username: "Sophia", password: "password1" , avatar_url: avatar4 , description: description4 )
 User.create(username: "Emma", password: "password1" , avatar_url: avatar5 , description: description5 )
 User.create(username: "Isabella", password: "password1" , avatar_url: avatar6 , description: description6 )
-User.create(username: "Mia", password: "password1" , avatar_url: avatar7 , description: description7 )
+User.create(username: "Dennis", password: "password1" , avatar_url: avatar7 , description: description7 )
 User.create(username: "Jack", password: "password1" , avatar_url: avatar8 , description: description8 )
 User.create(username: "Luke", password: "password1" , avatar_url: avatar9 , description: description9 )
 User.create(username: "Charlotte", password: "password1" , avatar_url: avatar10 , description: description10 )
@@ -99,9 +99,9 @@ image8 = "https://hbr.org/resources/images/article_assets/2015/05/MAY15_14_96324
 image9 = "http://savethewater.org/wp-content/uploads/2015/05/Lake-Mead-Has-Dropped-To-Its-Lowest-Level-Ever.jpg"
 image10 = "http://i.huffpost.com/gadgets/slideshows/358700/slide_358700_3987034_free.jpg"
 
-Story.create( title: title1, body: body, image_url: image1, subtitle: subtitle1, author_id: 1)
+Story.create( title: title1, body: body, image_url: image1, subtitle: subtitle1, author_id: 3)
 Story.create( title: title2, body: body, image_url: image2, subtitle: subtitle2, author_id: 2)
-Story.create( title: title3, body: body, image_url: image3, subtitle: subtitle3, author_id: 3)
+Story.create( title: title3, body: body, image_url: image3, subtitle: subtitle3, author_id: 1)
 Story.create( title: title4, body: body, image_url: image4, subtitle: subtitle4, author_id: 4)
 Story.create( title: title5, body: body, image_url: image5, subtitle: subtitle5, author_id: 5)
 Story.create( title: title6, body: body, image_url: image6, subtitle: subtitle6, author_id: 6)

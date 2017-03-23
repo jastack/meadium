@@ -13,13 +13,35 @@
   padding: 20px 20px 20px 20px;
 }
 
-.story section[class="author"] div {
+.story section[class="author"] div[class="info"] {
   padding-left: 15px;
+  display: flex-box;
+  flex-direction: column;
+  max-width: 500px;
 }
 
-.info {
-  display: flex-box;
+
+.story section[class="author"] div[class="author-follow"] {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5px;
 }
+
+.story a {
+  font-size: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.story button[class="following"] {
+  margin-left: 10px;
+}
+
+.story button[class="follow"] {
+  margin-left: 10px;
+}
+
 
 
 .story section[class="author"] h3 {
@@ -31,8 +53,6 @@
 .story section[class="body"] {
 }
 
-.header-image {
-}
 
 .avatar {
   height: 60px;
@@ -69,7 +89,7 @@
 .likes {
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 30%;
 }
 
 .likes li {

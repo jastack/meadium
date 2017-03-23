@@ -1,5 +1,6 @@
 json.id @story.id
 json.title @story.title
+json.subtitle @story.subtitle
 json.body @story.body
 json.author @story.author.username
 json.image_url @story.image_url

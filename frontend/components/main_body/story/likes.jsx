@@ -8,6 +8,7 @@ class Like extends React.Component {
     this.removeLike = this.removeLike.bind(this);
     this.checkLikes = this.checkLikes.bind(this);
     this.renderLikes = this.renderLikes.bind(this);
+    this.signedIn = this.signedIn.bind(this);
   }
 
   addLike(e){
@@ -45,14 +46,46 @@ class Like extends React.Component {
     }
   }
 
-  render(){
-    const likeCount = this.props.likes.length;
-    return(
-      <div>
-        <ul className="likes">
+  renderLikesNotSignedIn(){
+    return (
+      <svg className="svgIcon-use" width="29" height="29" viewBox="0 0 29 29"><path d="M16.215 23.716c-.348.288-.984.826-1.376 1.158a.526.526 0 0 1-.68 0c-.36-.307-.92-.78-1.22-1.03C9.22 20.734 3 15.527 3 10.734 3 7.02 5.916 4 9.5 4c1.948 0 3.77.898 5 2.434C15.73 4.898 17.552 4 19.5 4c3.584 0 6.5 3.02 6.5 6.734 0 4.9-6.125 9.96-9.785 12.982zM19.5 5.2c-1.774 0-3.423.923-4.41 2.468a.699.699 0 0 1-.59.323.706.706 0 0 1-.59-.32c-.988-1.54-2.637-2.47-4.41-2.47-2.922 0-5.3 2.49-5.3 5.54 0 4.23 6.19 9.41 9.517 12.19.217.18.566.48.783.66l.952-.79c3.496-2.88 9.348-7.72 9.348-12.05 0-3.05-2.378-5.53-5.3-5.53z"></path></svg>
+    );
+  }
+
+  renderPageLikes(){
+    if (this.signedIn()) {
+      const likeCount = this.props.likes.length;
+      return (
+        <ul className="likes" >
           <li>{this.renderLikes()}</li>
           <li>{likeCount}</li>
         </ul>
+      );
+    } else {
+      const likeCount = this.props.likes.length;
+      return (
+        <ul className="likes">
+          <li>{this.renderLikesNotSignedIn()}</li>
+          <li>{likeCount}</li>
+          <li><h3>Sign in to Like!</h3></li>
+        </ul>
+      );
+    }
+  }
+
+  signedIn(){
+    if (this.props.currentUser) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+
+  render(){
+    return(
+      <div>
+        {this.renderPageLikes()}
       </div>
     );
   }
