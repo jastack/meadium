@@ -7,6 +7,8 @@ class Story extends React.Component {
   constructor(props){
     super(props);
     this.comments = this.comments.bind(this);
+    this.follow = this.follow.bind(this);
+    this.signedInCheck = this.signedInCheck.bind(this);
 
   }
 
@@ -23,11 +25,41 @@ class Story extends React.Component {
     }
   }
 
+  follow(){
+    const authorId = this.props.details.author_id;
+    if (this.props.currentUser){
+      const userId = this.props.currentUser.id;
+      this.props.createFollow(authorId, userId);
+    }
+  }
+
   update(field) {
 		return e => this.setState({
 			[field]: e.currentTarget.value
 		});
 	}
+
+  signedInCheck(){
+    if (this.props.currentUser) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  likes(){
+    if (this.signedInCheck()){
+      return (
+        <section className="likes">
+          <LikesContainer />
+        </section>
+      );
+    } else {
+      return (
+        <h2>Must be signed in to like!</h2>
+      );
+    }
+  }
 
   render(){
     const id = this.props.location.pathname.slice(1);
@@ -43,6 +75,7 @@ class Story extends React.Component {
     if (comments) {
       commentSection = comments.map(comment => (comment.comment));
     }
+
     return (
       <div className="background">
         <div className='story'>
@@ -50,7 +83,7 @@ class Story extends React.Component {
             <img className="avatar" src={avatarUrl}></img>
             <div className="info">
               <h2 className="name"><Link to={`/authors/${authorId}`}>{author}</Link></h2>
-              <button className="follow">Follow</button>
+              <button onClick={this.follow} className="follow">Follow</button>
               <h3 className="description">{description}</h3>
             </div>
           </section>
@@ -60,10 +93,8 @@ class Story extends React.Component {
             <img className="header-image" src={imageUrl} />
             <p>{body}</p>
           </section>
-          
-          <section className="likes">
-            <LikesContainer />
-          </section>
+
+          {this.likes()}
         </div>
 
         <div className="responses">

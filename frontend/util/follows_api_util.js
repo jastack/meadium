@@ -8,8 +8,8 @@ export const newFollow = (authorId, userId ) => (
 
 export const unFollow = (authorId, followId) => (
   $.ajax({
-    metod: "DELETE",
-    url: `api/authors/${authorId}/${followId}`
+    method: "DELETE",
+    url: `api/authors/${authorId}/follows/${followId}`
   })
 );
 

@@ -44,9 +44,10 @@ class User < ApplicationRecord
     foreign_key: :user_id,
     class_name: :Comment
 
-  has_many :feed_authors,
+  has_many :following_authors,
     through: :following,
     source: :author
+
 
   after_initialize :ensure_session_token
   before_validation :ensure_session_token_uniqueness

@@ -1,19 +1,24 @@
-.author-section {
-  font-family: 'Roboto Condensed', sans-serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+.author-container {
   box-sizing: border-box;
   padding: 20px;
-  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  box-shadow: 0px 0px 4px  0px rgba(0,0,0,.04);
   border-bottom: 1px solid rgba(0,0,0,.09);
   border-radius: 3px !important;
 }
 
+.author-section {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: grid;
+  margin-left: 20%;
+  margin-right: 20%;
+  grid-gap: 10px;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+
+}
+
 .author-page h2[class="features"] {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #fafafa;
   max-width: 640px;
@@ -37,11 +42,33 @@
   background-color: #fff;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.follow {
+  color: #00ab6b;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 1px solid #00ab6b;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 999em;
+}
+
+.following {
+  color: #fff !important;
+  background-color: #00ab6b !important;
+  border: 1px solid #00ab6b;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 999em;
+}
+
 .author-section h3 {
   font-size: 16px;
   margin-top: 4px;
-  margin-right: 120px;
   background-color: #fff;
+  color: rgba(0,0,0,.6);
 }
 
 .author-section img {

@@ -1,4 +1,4 @@
-import { RECEIVE_ALL_FOLLOWERS, RECEIVE_SINGLE_FOLLOWERS } from '../actions/follows_actions';
+import { RECEIVE_ALL_FOLLOWERS, RECEIVE_SINGLE_FOLLOWERS, REMOVE_FOLLOW } from '../actions/follows_actions';
 import merge from 'lodash/merge';
 
 const FollowersReducer = (state = [], action) => {
@@ -8,6 +8,11 @@ const FollowersReducer = (state = [], action) => {
       return action.followers;
     case RECEIVE_SINGLE_FOLLOWERS:
       let newState = Object.assign([], state, {[state.length]: action.result});
+      return newState;
+    case REMOVE_FOLLOW:
+      newState = merge([], state);
+      const index = newState.findIndex(x => x.id === action.follow.id);
+      newState.splice(index, 1);
       return newState;
     default:
       return state;
