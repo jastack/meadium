@@ -49,6 +49,7 @@ class Greeting extends React.Component {
         <li><Link to="/create">Write a story</Link></li>
         <li><button onClick={this.visitUserProfile}>{currentUser.username}</button></li>
         <li><button onClick={this.signout}>Log Out</button></li>
+        <li><div></div></li>
       </ul>
   	</nav>);
   }
