@@ -16,7 +16,6 @@ class TopStories extends React.Component {
 
   storiesArray(){
     const storyArray = this.props.stories;
-    console.log(storyArray);
     if (storyArray[0]) {
       return storyArray.map( story => <FeedItemContainer key={story.id} story={story} />);
     } else {
@@ -27,7 +26,6 @@ class TopStories extends React.Component {
 
 
   renderStories(){
-    console.log(this.props.stories);
     const storyArray = this.props.stories;
     if (storyArray[0]) {
       return (
