@@ -1,11 +1,20 @@
 .index {
-  display: flex-box;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 710px;
-
+  display: grid;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100% 100%;
 }
+
+        <content className="editor">
+          <RichTextEditor
+            value={this.state.value}
+            onChange={this.bodyUpdate}/>
+        </content>
+        
+
+<button onClick={this.handleSubmitTest}>TestSubmit</button>
 
 .box {
         background-color: white;
@@ -27,7 +36,6 @@
 
 .b {
   grid-column: 1;
-  width: 33%;
   grid-row: 2;
   display: flex;
   flex-direction: column;
@@ -37,16 +45,10 @@
   margin-bottom: 20px;
 }
 
-.row2 {
-  display: flex;
-  flex-direction: row;
-}
-
 .c {
   grid-column: 2;
   grid-row: 2;
   display: flex;
-  width: 33%;
   flex-direction: column;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 36px;
@@ -58,7 +60,6 @@
   grid-column: 2;
   grid-row: 2;
   display: flex;
-  width: 33%;
   flex-direction: column;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 36px;

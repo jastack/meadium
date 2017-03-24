@@ -20,6 +20,7 @@ class Comments extends React.Component {
     e.preventDefault();
     const comment = this.state;
     this.props.createComment(this.props.storyId, comment);
+    this.setState({ comment: ""});
   }
 
   signedIn(){
@@ -110,12 +111,12 @@ class Comments extends React.Component {
       <section className="comments">
         <h2>Responses</h2>
 
-        {this.formRender()}
-
         <div className="commentIndexItem">
           {this.renderComments()}
           {this.props.children}
         </div>
+
+        {this.formRender()}
 
       </section>
     </div>);

@@ -1,17 +1,19 @@
 import React from 'react';
 import { withRouter, Link, hashHistory } from 'react-router';
+import RichTextEditor from 'react-rte';
 
 
 class NewStory extends React.Component {
   constructor(props){
     super(props);
-    this.state = { title: "", body: "", image_url: "", subtitle: "", author_id: this.props.author.id, mode: "edit" };
+    this.state = { title: "", body: "", image_url: "", subtitle: "", author_id: this.props.author.id, mode: "edit", value: RichTextEditor.createEmptyValue() };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderForm = this.renderForm.bind(this);
     this.renderPreview = this.renderPreview.bind(this);
     this.preview = this.preview.bind(this);
     this.handleRender = this.handleRender.bind(this);
     this.edit = this.edit.bind(this);
+    this.bodyUpdate = this.bodyUpdate.bind(this);
   }
 
   update(field) {
@@ -21,6 +23,12 @@ class NewStory extends React.Component {
 	}
 
   handleSubmit(e){
+    e.preventDefault();
+    const story = this.state;
+    this.props.createStory(story).then(hashHistory.push(`/authors/${this.state.author_id}`));
+  }
+
+  handleSubmitTest(e){
     e.preventDefault();
     const story = this.state;
     this.props.createStory(story).then(hashHistory.push(`/authors/${this.state.author_id}`));
@@ -141,6 +149,10 @@ class NewStory extends React.Component {
     } else {
       return this.renderPreview();
     }
+  }
+
+  bodyUpdate(text) {
+    this.setState({ value: text });
   }
 
   render(){
