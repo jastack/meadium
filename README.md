@@ -87,8 +87,8 @@ Meadium was built from a rails base in two weeks.
 
 To help structure the project and give an implementation timeline during the development process I put together a project [proposal] and a [database schema].
 
-[proposal]: (docs/README.md)
-[database schema]: (docs/schema.md)
+[proposal]: docs/README.md
+[database schema]: docs/schema.md
 
 ## Future Features
 
