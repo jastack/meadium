@@ -20,9 +20,9 @@ const Root = ({ store }) => {
         <IndexRedirect to="/index" />
         <Route path="/index" component={ StoryIndexContainer } />
         <Route path="/create" component={ NewStoryContainer } />
-        <Route path="/:id" component={ StoryDetailContainer } />
         <Route path="/authors/:author_id" component={ AuthorContainer } />
         <Route path="/topstories" component={ TopStoriesContainer } />
+        <Route path="/:id" component={ StoryDetailContainer } />
       </Route>
     </Router>
   </Provider>);

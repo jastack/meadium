@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import FeedContainer from '../../feed/feed_container';
+import FeedItemContainer from '../../feed/feed_container';
 
 class TopStories extends React.Component {
   constructor(props) {
@@ -8,8 +8,6 @@ class TopStories extends React.Component {
 
     this.storiesArray = this.storiesArray.bind(this);
     this.renderHome = this.renderHome.bind(this);
-    this.renderFeed = this.renderFeed.bind(this);
-    this.renderPage = this.renderPage.bind(this);
   }
 
   componentDidMount(){

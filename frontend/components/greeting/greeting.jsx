@@ -52,6 +52,8 @@ class Greeting extends React.Component {
     Modal.setAppElement('body');
    }
 
+
+
    openModal(){
      this.setState({modalIsOpen: true});
    }
@@ -114,6 +116,7 @@ class Greeting extends React.Component {
   }
 
   render (){
+    console.log(this.props);
     return (
       <div>
         {this.renderButtons()}
