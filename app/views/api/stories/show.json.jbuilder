@@ -8,3 +8,4 @@ json.description @story.author.description
 json.avatar_url @story.author.avatar_url
 json.comments @story.comments
 json.author_id @story.author.id
+json.date @story.created_at

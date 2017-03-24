@@ -6,4 +6,5 @@ json.array! @feed do |story|
   json.image_url story.image_url
   json.avatar_url story.author.avatar_url
   json.subtitle story.subtitle
+  json.date story.created_at
 end

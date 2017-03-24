@@ -7,4 +7,5 @@ json.stories @author.stories do |story|
   json.title story.title
   json.image_url story.image_url
   json.subtitle story.subtitle
+  json.date story.created_at
 end

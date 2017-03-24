@@ -7,7 +7,7 @@ class TopStories extends React.Component {
     super(props);
 
     this.storiesArray = this.storiesArray.bind(this);
-    this.renderHome = this.renderHome.bind(this);
+    this.renderStories = this.renderStories.bind(this);
   }
 
   componentDidMount(){
@@ -16,6 +16,7 @@ class TopStories extends React.Component {
 
   storiesArray(){
     const storyArray = this.props.stories;
+    console.log(storyArray);
     if (storyArray[0]) {
       return storyArray.map( story => <FeedItemContainer key={story.id} story={story} />);
     } else {
@@ -25,12 +26,13 @@ class TopStories extends React.Component {
 
 
 
-  renderHome(){
-    const storyArray = this.storiesArray();
+  renderStories(){
+    console.log(this.props.stories);
+    const storyArray = this.props.stories;
     if (storyArray[0]) {
       return (
         <div className="stories-index">
-          {storyArray}
+          {this.storiesArray()}
         </div>
       );
     } else {
@@ -43,7 +45,7 @@ class TopStories extends React.Component {
   render(){
     return(
       <div>
-        {this.renderHome()}
+        {this.renderStories()}
       </div>
     );
   }

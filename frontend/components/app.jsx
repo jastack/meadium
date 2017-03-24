@@ -9,8 +9,9 @@ const App = ({ children }) => (
     <header className="main-nav">
       <nav className="left-nav">
         <ul>
-          <li><img src="http://res.cloudinary.com/dopv3qpj7/image/upload/v1489687547/nature_gq8c8x.svg"></img></li>
-          <li>Meadium</li>
+
+          <li><Link to="/index"><img src="http://res.cloudinary.com/dopv3qpj7/image/upload/v1489687547/nature_gq8c8x.svg"></img></Link></li>
+          <li><Link to="/index">Meadium</Link></li>
         </ul>
       </nav>
       <GreetingContainer />
@@ -20,7 +21,7 @@ const App = ({ children }) => (
       <nav className="sub-topics">
         <ul>
           <li><Link to="/index">Home</Link></li>
-          <li>Top Stories</li>
+          <li><Link to="/topstories">Top Stories</Link></li>
           <li>Editor's picks</li>
           <li>Technology</li>
           <li>Humans</li>
