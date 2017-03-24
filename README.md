@@ -27,7 +27,7 @@ Meadium uses the BCrypt ruby gem in the backend to take in a user's password and
 
 ### Stories
 
-Users can read stories and create their own. Stories are saved in the database and access to the API comes through the stories controller in rails.  
+Users can read stories and create their own. Stories are saved in the database and access to the API comes through the rails stories controller.  
 
 When creating a new story a user has the ability to preview how the story will looking by clicking a preview button.
 
@@ -67,7 +67,7 @@ class NewStory extends React.Component {
 
 ### Comments
 
-  A user can comment on any story, as long as that user is logged in. Comments are stored in the database and associated with each user through a join table.
+  A user can comment on any story, as long as that user is logged in. Comments are stored in the database with a column for for `story_id`, a column for `user_id`, and a `body` column for the actual comment.
 
 ### Likes
 
@@ -83,7 +83,7 @@ class NewStory extends React.Component {
 
 ## Project Design
 
-Meadium was built from scratch in two weeks.
+Meadium was built from a rails base in two weeks.
 
 To help structure the project and give an implementation timeline during the development process I put together a project [proposal] and a [database schema].
 
