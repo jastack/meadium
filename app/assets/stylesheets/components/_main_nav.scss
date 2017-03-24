@@ -58,17 +58,7 @@ li.login-signup.current {
 	padding: 0;
 }
 
-.right-nav li:last-of-type:hover {
-	color: rgba(0,0,0,.6);
-	font-size: 14px;
-}
 
 .right-nav > ul > li {
 	cursor: pointer;
-}
-
-.right-nav > ul > li:last-of-type {
-	position: relative;
-	padding: 7px 9px;
-	transition: background-color 0.3s;
 }
