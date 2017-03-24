@@ -56,7 +56,7 @@ class Author extends React.Component {
     const proceed = this.checkFollows();
     if (proceed){
       if (proceed === "not signed in") {
-        return <button className="follow">Sign in to Follow!</button>;
+        return <div></div>;
       } else {
         return <button className="following" onClick={this.removeFollow}>Following</button>;
       }

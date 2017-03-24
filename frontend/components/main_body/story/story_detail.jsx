@@ -4,7 +4,6 @@ import CommentsContainer from './comments_container';
 import LikesContainer from './likes_container';
 import FollowsContainer from '../author/follows_container';
 
-
 class Story extends React.Component {
   constructor(props){
     super(props);
@@ -12,6 +11,7 @@ class Story extends React.Component {
     this.renderFollows = this.renderFollows.bind(this);
     this.deleteStory = this.deleteStory.bind(this);
     this.deleteButton = this.deleteButton.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
   }
 
   componentDidMount(){
@@ -39,6 +39,10 @@ class Story extends React.Component {
     } else {
       return false;
     }
+  }
+
+  handleLogin(e){
+
   }
 
   ownStory(){

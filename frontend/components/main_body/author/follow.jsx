@@ -1,6 +1,8 @@
 import React from 'react';
 
 
+
+
 class Follow extends React.Component {
   constructor(props){
     super(props);
@@ -88,7 +90,7 @@ class Follow extends React.Component {
         return <button className="follow" onClick={this.follow}>Follow</button>;
       }
     } else {
-      return <button className="follow">Sign in to Follow!</button>;
+      return <div></div>;
     }
   }
 
