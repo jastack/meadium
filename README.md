@@ -1,24 +1,24 @@
-# README
+# Meadium
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Meadium live][heroku]
 
-Things you may want to cover:
+Meadium is a news and media web application inspired by Medium, where users can read, comment, and like stories about the body of water formed by the Hoover Dam. Users can also follow authors and view a feed tailored to their specific interests.
 
-* Ruby version
+Meadium utilizes Ruby on Rails on the backend and React.js on the frontend, with a Redux architectural framework.
 
-* System dependencies
+[heroku]: https://meadium.herokuapp.com/#/index?_k=uo1mys
 
-* Configuration
+## Features & Implementation
+These are the features
 
-* Database creation
+###Authentication
 
-* Database initialization
+###Stories
 
-* How to run the test suite
+###Comments
 
-* Services (job queues, cache servers, search engines, etc.)
+###Likes
 
-* Deployment instructions
+###Follows
 
-* ...
+###Feed

@@ -27,7 +27,7 @@ class Greeting extends React.Component {
         <li><button onClick={this.handleLogin}>Sign in</button></li>
         <li>/</li>
         <li><button onClick={this.handleSignUp}>Sign up</button></li>
-        <li className="search-modal"><i className="fa fa-search"></i></li>
+        <li><div></div></li>
       </ul>
     </nav>);
   }
