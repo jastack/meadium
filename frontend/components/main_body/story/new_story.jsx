@@ -42,8 +42,9 @@ class NewStory extends React.Component {
           <section className="author">
             <img className="avatar" src={avatarUrl}></img>
             <div className="info">
-              <h2 className="name"><Link to={`/authors/${authorId}`}>{author}</Link></h2>
-              <button className="follow">Follow</button>
+              <div className="author-follow">
+                <h2 className="name">{author}</h2>
+              </div>
               <h3 className="description">{authorDescription}</h3>
             </div>
           </section>
@@ -54,8 +55,10 @@ class NewStory extends React.Component {
             <p>{body}</p>
           </section>
         </div>
-        <button onClick={this.handleSubmit}>Publish!</button>
-        <button onClick={this.edit}>Edit</button>
+        <div className="button">
+          <button className="follow" onClick={this.handleSubmit}>Publish!</button>
+          <button className="follow" onClick={this.edit}>Edit</button>
+        </div>
       </div>
     );
   }
@@ -115,7 +118,9 @@ class NewStory extends React.Component {
             <br />
           </form>
         </div>
-        <button onClick={this.preview}>Preview</button>
+        <div className="button">
+          <button className="follow" onClick={this.preview}>Preview</button>
+        </div>
       </div>
     );
   }

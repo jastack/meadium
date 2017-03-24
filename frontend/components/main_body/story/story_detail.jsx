@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter, Link } from 'react-router';
+import { withRouter, Link, hashHistory } from 'react-router';
 import CommentsContainer from './comments_container';
 import LikesContainer from './likes_container';
 import FollowsContainer from '../author/follows_container';
@@ -9,7 +9,9 @@ class Story extends React.Component {
   constructor(props){
     super(props);
     this.comments = this.comments.bind(this);
-
+    this.renderFollows = this.renderFollows.bind(this);
+    this.deleteStory = this.deleteStory.bind(this);
+    this.deleteButton = this.deleteButton.bind(this);
   }
 
   componentDidMount(){
@@ -39,6 +41,41 @@ class Story extends React.Component {
     }
   }
 
+  ownStory(){
+    if (this.signedInCheck()) {
+      const authorId = this.props.details.author_id;
+      const userId = this.props.currentUser.id;
+      if (authorId === userId) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+
+  deleteStory(e){
+    e.preventDefault();
+    const id = this.props.location.pathname.slice(1);
+    this.props.deleteStory(id);
+    hashHistory.push("/");
+  }
+
+  renderFollows(){
+    if (this.ownStory()) {
+      return <div></div>;
+    } else {
+      return <FollowsContainer />;
+    }
+  }
+
+  deleteButton(){
+    if (this.ownStory()) {
+      return <button className="follow" onClick={this.deleteStory}>Delete Story</button>;
+    } else {
+      return <div></div>;
+    }
+  }
+
   render(){
     const id = this.props.location.pathname.slice(1);
     const author = this.props.details.author;
@@ -63,7 +100,7 @@ class Story extends React.Component {
             <div className="info">
               <div className="author-follow">
                 <h2 className="name"><Link to={`/authors/${authorId}`}>{author}</Link></h2>
-                <FollowsContainer />
+                {this.renderFollows()}
               </div>
               <h3 className="description">{description}</h3>
             </div>
@@ -71,14 +108,18 @@ class Story extends React.Component {
 
           <section className="body">
             <h1>{title}</h1>
-            <h2>{subtitle}</h2>
+            <h2 className="subtitle">{subtitle}</h2>
             <img className="header-image" src={imageUrl} />
             <p>{body}</p>
           </section>
 
           <section className="likes">
             <LikesContainer />
+            <div className="delete">
+              {this.deleteButton()}
+            </div>
           </section>
+
         </div>
 
         <div className="responses">

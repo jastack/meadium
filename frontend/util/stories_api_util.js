@@ -19,3 +19,18 @@ export const createStory = story => (
     data: { story }
   })
 );
+
+export const deleteStory = (id) => {
+  return $.ajax({
+    method: "DELETE",
+    url: `api/stories/${id}`
+  });
+};
+
+export const updateStory = (story) => {
+  return $.ajax({
+    method: "PATCH",
+    url: `api/stories/${story.id}`,
+    data: { story }
+  });
+};

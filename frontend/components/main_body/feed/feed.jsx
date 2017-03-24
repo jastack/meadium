@@ -26,7 +26,7 @@ class Feed extends React.Component {
   feedArray(){
     if (this.props.feed) {
       if (this.props.feed[0]) {
-        return this.props.feed.map( story => <FeedItemContainer key={story.id} story={story}/>)
+        return this.props.feed.map( story => <FeedItemContainer key={story.id} story={story}/>);
       }
     }
   }

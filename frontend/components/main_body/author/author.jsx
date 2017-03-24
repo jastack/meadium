@@ -10,6 +10,7 @@ class Author extends React.Component {
     this.checkFollows = this.checkFollows.bind(this);
     this.renderFollows = this.renderFollows.bind(this);
     this.removeFollow = this.removeFollow.bind(this);
+    this.ownPage = this.ownPage.bind(this);
   }
 
   componentDidMount(){
@@ -64,7 +65,27 @@ class Author extends React.Component {
     }
   }
 
+  ownPage(){
+    if (this.props.currentUser) {
+      const userId = this.props.currentUser.id;
+      const authorId = this.props.author.id;
+      if (userId === authorId) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
 
+  renderFinalFollows(){
+    if (this.ownPage()) {
+      return <div></div>;
+    } else {
+      return this.renderFollows();
+    }
+  }
 
 
   render(){
@@ -87,7 +108,7 @@ class Author extends React.Component {
               <h3>{description}</h3>
               <h3><div className="bold">{followingCount}</div> Following</h3>
               <h3><div className="bold">{followersCount}</div> Followers</h3>
-              <h3>{this.renderFollows()}</h3>
+              <h3>{this.renderFinalFollows()}</h3>
             </div>
             <img src={avatarUrl} />
           </div>

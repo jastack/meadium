@@ -18,6 +18,7 @@ class Greeting extends React.Component {
     this.sessionLinks = this.sessionLinks.bind(this);
     this.overlay = this.overlay.bind(this);
     this.signout = this.signout.bind(this);
+    this.visitUserProfile = this.visitUserProfile.bind(this);
   }
 
   sessionLinks() {
@@ -37,11 +38,16 @@ class Greeting extends React.Component {
     this.props.logout();
   }
 
+  visitUserProfile(){
+    hashHistory.push('/');
+    hashHistory.push(`/authors/${this.props.currentUser.id}`);
+  }
+
   personalGreeting(currentUser, logout) {
   	return (<nav className="right-nav">
       <ul>
         <li><Link to="/create">Write a story</Link></li>
-        <li><Link to={`/authors/${currentUser.id}`}>{currentUser.username}</Link></li>
+        <li><button onClick={this.visitUserProfile}>{currentUser.username}</button></li>
         <li><button className="header-button" onClick={this.signout}>Log Out</button></li>
         <li className="search-modal"><i className="fa fa-search"></i></li>
       </ul>
@@ -89,9 +95,17 @@ class Greeting extends React.Component {
 
   navLink() {
   	if (this.state.formType === "login") {
-  		return <h3>Need an account? <button className="link"  onClick={this.handleLink} >Sign up!</button></h3>;
+  		return (
+        <div className="bottom-nav">
+          <h4>Need an account?</h4>
+          <button className="link"  onClick={this.handleLink} >Sign up!</button>
+        </div>);
   	} else {
-  		return <h3>Already have an account? <button className="link" onClick={this.handleLink} >Sign in!</button></h3>;
+  		return (
+        <div className="bottom-nav">
+          <h4>Already have an account?</h4>
+          <button className="link" onClick={this.handleLink}>Sign in!</button>
+        </div>);
   	}
   }
 

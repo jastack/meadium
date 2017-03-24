@@ -8,7 +8,6 @@ import StoryIndexContainer from './main_body/story/story_index_container';
 import NewStoryContainer from './main_body/story/new_story_container';
 import AuthorContainer from './main_body/author/author_container';
 import StoryPreviewContainer from './main_body/story/story_preview_container';
-import TopStoriesContainer from './main_body/story/topics/top_stories_container';
 
 
 const Root = ({ store }) => {
@@ -21,7 +20,6 @@ const Root = ({ store }) => {
         <Route path="/index" component={ StoryIndexContainer } />
         <Route path="/create" component={ NewStoryContainer } />
         <Route path="/authors/:author_id" component={ AuthorContainer } />
-        <Route path="/topstories" component={ TopStoriesContainer } />
         <Route path="/:id" component={ StoryDetailContainer } />
       </Route>
     </Router>

@@ -51,11 +51,9 @@ class FeedItem extends React.Component {
           <Link className="title" to={`/${this.props.story.id}`}>{story.title}</Link>
           <img className="author" src={this.props.story.image_url} />
           <h2 className="read">{this.props.story.subtitle}</h2>
+          <Link to={`/${this.props.story.id}`} className="readmore">Read more...</Link>
         </div>
 
-        <div>
-
-        </div>
 
       </div>
     );

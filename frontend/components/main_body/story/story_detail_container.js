@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchStory } from '../../../actions/story_actions';
+import { fetchStory, deleteStory } from '../../../actions/story_actions';
 import { fetchAllLikes, newLike, disLike } from '../../../actions/likes_actions';
 import { createFollow, fetchAllFollowers } from '../../../actions/follows_actions';
 
@@ -21,7 +21,8 @@ const mapDispatchToProps = (dispatch) => ({
   newLike: (id, like) => dispatch(newLike(id, like)),
   disLike: (id) => dispatch(disLike(id)),
   createFollow: (authorId, userId) => dispatch(createFollow(authorId, userId)),
-  fetchAllFollowers: id => dispatch(fetchAllFollowers(id))
+  fetchAllFollowers: id => dispatch(fetchAllFollowers(id)),
+  deleteStory: id => dispatch(deleteStory(id))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(StoryDetail);

@@ -1,4 +1,4 @@
-import { RECEIVE_ALL_STORIES, RECEIVE_STORY } from '../actions/story_actions.js';
+import { RECEIVE_ALL_STORIES, RECEIVE_STORY, REMOVE_STORY } from '../actions/story_actions.js';
 import merge from 'lodash/merge';
 
 const defaultStory = {
@@ -17,6 +17,10 @@ const StoryIndexReducer = (state = {}, action) => {
   switch(action.type) {
     case RECEIVE_ALL_STORIES:
       return action.stories;
+    case REMOVE_STORY:
+      let newState = merge({}, state);
+      delete newState[action.story.id];
+      return newState;
     default:
       return state;
   }

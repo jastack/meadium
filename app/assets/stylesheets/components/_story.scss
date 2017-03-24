@@ -20,6 +20,10 @@
   max-width: 500px;
 }
 
+.body h2[class="subtitle"] {
+  margin-left: 5%;
+}
+
 
 .story section[class="author"] div[class="author-follow"] {
   display: flex;
@@ -64,7 +68,6 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 32px;
   padding-left: 20px;
-  padding-bottom: 20px;
 }
 
 .story p {
@@ -95,4 +98,8 @@
 .likes li {
   padding-left: 10px;
   color: rgba(0,0,0,.44);
+}
+
+.delete {
+  padding-left: 10px;
 }

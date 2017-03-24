@@ -64,10 +64,9 @@
 .modal h3 {
   color: black;
   font-size: 16px;
-  margin: 10px 24px 0px 24px;
-  padding-left: 58px;
-  padding-right: 32px;
   font-weight: lighter;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .modal button[class="link"] {
@@ -141,4 +140,19 @@
 .modal input[type="submit"]:hover {
   align-items: baseline;
   color: #1c9963;
+}
+
+.modal div[class="bottom-nav"] button {
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-nav {
+  display: flex;
+  margin-left: 22%
+}
+
+h4 {
+  font-size: 16px;
+  padding-right: 10px;
 }

@@ -3,7 +3,7 @@
   flex-direction: row;
   padding-top: 35px;
   padding-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 10%;
   margin-right: 20px;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -23,7 +23,7 @@
 }
 
 .editor {
-  margin-left: 50px;
+  margin-left: 10%;
   margin-right: 20px;
   padding-top: 35px;
 }
@@ -32,18 +32,15 @@
   font-size: 16px;
 }
 
-.testing-css {
-  display: grid;
-  padding-left: 20px;
-  padding-right: 20px;
-  grid-gap: 10px;
-    grid-template-columns: 100px 100px 100px;
-    background-color: #fff;
-    color: #444
+.info {
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-
-
+.button {
+  background-color: #fff;
+  padding-left: 10%;
+}
 
 .a {
   grid-column: 1 / 4;

@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Like extends React.Component {
   constructor(props){
     super(props);
@@ -67,7 +68,6 @@ class Like extends React.Component {
         <ul className="likes">
           <li>{this.renderLikesNotSignedIn()}</li>
           <li>{likeCount}</li>
-          <li><h3>Sign in to Like!</h3></li>
         </ul>
       );
     }

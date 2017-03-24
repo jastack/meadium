@@ -38,6 +38,7 @@ const AuthorIndexItem = ({ story, username, avatarUrl, id }) => (
       <Link className="title" to={`/${story.id}`}>{story.title}</Link>
       <img className="author" src={story.image_url} />
       <h2 className="read">{story.subtitle}</h2>
+      <h3><Link className="readmore" to={`/${story.id}`}>Read more...</Link></h3>
     </div>
 
     <div>
