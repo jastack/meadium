@@ -21,7 +21,7 @@ const App = ({ children }) => (
       <nav className="sub-topics">
         <ul>
           <li><Link to="/index">Home</Link></li>
-          <li><Link to="/topstories">Top Stories</Link></li>
+          <li>Top Stories</li>
           <li>Editor's picks</li>
           <li>Technology</li>
           <li>Humans</li>
