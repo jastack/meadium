@@ -11,12 +11,16 @@ class Author extends React.Component {
     this.renderFollows = this.renderFollows.bind(this);
     this.removeFollow = this.removeFollow.bind(this);
     this.ownPage = this.ownPage.bind(this);
+    this.state = {authorId: this.props.params.author_id};
   }
 
   componentDidMount(){
-    this.props.fetchAuthor(this.props.params.author_id);
-    this.props.fetchAllFollowing(this.props.params.author_id);
-    this.props.fetchAllFollowers(this.props.params.author_id);
+    this.props.fetchAuthor(this.state.authorId);
+    this.props.fetchAllFollowing(this.state.authorId);
+    this.props.fetchAllFollowers(this.state.authorId);
+  }
+
+  componentWillReceiveProps(newProps){
   }
 
   removeFollow(e){

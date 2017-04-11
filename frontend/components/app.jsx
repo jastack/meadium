@@ -21,13 +21,12 @@ const App = ({ children }) => (
       <nav className="sub-topics">
         <ul>
           <li><Link to="/index">Home</Link></li>
-          <li>Top Stories</li>
-          <li>Editor's picks</li>
-          <li>Technology</li>
-          <li>Humans</li>
-          <li>Culture</li>
-          <li>Business</li>
-          <li>Bookmarks</li>
+          <li><Link to="topics/1/">Top Stories</Link></li>
+          <li><Link to="topics/2/">Editor's Picks</Link></li>
+          <li><Link to="topics/3/">Technology</Link></li>
+          <li><Link to="topics/4/">Humans</Link></li>
+          <li><Link to="topics/5/">Culture</Link></li>
+          <li><Link to="topics/6/">Business</Link></li>
         </ul>
       </nav>
     </header>
