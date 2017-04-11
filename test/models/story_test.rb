@@ -10,6 +10,8 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  subtitle   :text
+#  likes      :integer
+#  topic_id   :integer
 #
 
 require 'test_helper'

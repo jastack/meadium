@@ -43,6 +43,15 @@ User.create(username: "Charlotte", password: "password1" , avatar_url: avatar10 
 
 # -------------------------------
 
+
+# ------------------- Topics -------------
+Topic.create(name: "Top Stories")
+Topic.create(name: "Editor's picks")
+Topic.create(name: "Technology")
+Topic.create(name: "Humans")
+Topic.create(name: "Culture")
+Topic.create(name: "Business")
+
 # ------------Stories---------
 body = "Lake Mead is the largest reservoir in the United States,
 measured by water capacity. It is on the Colorado River about
@@ -99,15 +108,15 @@ image8 = "https://hbr.org/resources/images/article_assets/2015/05/MAY15_14_96324
 image9 = "http://savethewater.org/wp-content/uploads/2015/05/Lake-Mead-Has-Dropped-To-Its-Lowest-Level-Ever.jpg"
 image10 = "http://i.huffpost.com/gadgets/slideshows/358700/slide_358700_3987034_free.jpg"
 
-Story.create( title: title1, body: body, image_url: image1, subtitle: subtitle1, author_id: 3)
-Story.create( title: title2, body: body, image_url: image2, subtitle: subtitle2, author_id: 2)
-Story.create( title: title3, body: body, image_url: image3, subtitle: subtitle3, author_id: 1)
-Story.create( title: title4, body: body, image_url: image4, subtitle: subtitle4, author_id: 4)
-Story.create( title: title5, body: body, image_url: image5, subtitle: subtitle5, author_id: 5)
-Story.create( title: title6, body: body, image_url: image6, subtitle: subtitle6, author_id: 6)
-Story.create( title: title7, body: body, image_url: image7, subtitle: subtitle7, author_id: 7)
-Story.create( title: title8, body: body, image_url: image8, subtitle: subtitle8, author_id: 8)
-Story.create( title: title9, body: body, image_url: image9, subtitle: subtitle9, author_id: 9)
+Story.create( title: title1, body: body, image_url: image1, subtitle: subtitle1, author_id: 3, topic_id: 1)
+Story.create( title: title2, body: body, image_url: image2, subtitle: subtitle2, author_id: 2, topic_id: 1)
+Story.create( title: title3, body: body, image_url: image3, subtitle: subtitle3, author_id: 1, topic_id: 1)
+Story.create( title: title4, body: body, image_url: image4, subtitle: subtitle4, author_id: 4, topic_id: 1)
+Story.create( title: title5, body: body, image_url: image5, subtitle: subtitle5, author_id: 5, topic_id: 1)
+Story.create( title: title6, body: body, image_url: image6, subtitle: subtitle6, author_id: 6, topic_id: 1)
+Story.create( title: title7, body: body, image_url: image7, subtitle: subtitle7, author_id: 7, topic_id: 1)
+Story.create( title: title8, body: body, image_url: image8, subtitle: subtitle8, author_id: 8, topic_id: 1)
+Story.create( title: title9, body: body, image_url: image9, subtitle: subtitle9, author_id: 9, topic_id: 1)
 Story.create( title: title10, body: body, image_url: image10, subtitle: subtitle10, author_id: 10)
 
 
