@@ -40,7 +40,7 @@ class TopicFeed extends React.Component {
 
   render(){
     return(
-      <div>
+      <div className="stories-index">
         {this.renderTopicItem()}
       </div>
     );
