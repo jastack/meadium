@@ -14,6 +14,8 @@ class NewStory extends React.Component {
     this.handleRender = this.handleRender.bind(this);
     this.edit = this.edit.bind(this);
     this.bodyUpdate = this.bodyUpdate.bind(this);
+    this.checkfields = this.checkfields.bind(this);
+    this.renderBody = this.renderBody.bind(this);
   }
 
   update(field) {
@@ -24,14 +26,22 @@ class NewStory extends React.Component {
 
   handleSubmit(e){
     e.preventDefault();
-    const story = this.state;
-    this.props.createStory(story).then(hashHistory.push(`/authors/${this.state.author_id}`));
+    const story = {title: this.state.title, body: this.state.body, image_url: this.state.image_url, subtitle: this.state.subtitle, author_id: this.state.author_id, topic_id: 7};
+    this.props.createStory(story).then(response =>
+      hashHistory.push(`/${response.story.id}`)
+    );
   }
 
-  handleSubmitTest(e){
-    e.preventDefault();
-    const story = this.state;
-    this.props.createStory(story).then(hashHistory.push(`/authors/${this.state.author_id}`));
+
+  renderBody(){
+    var $log = $('#log');
+    const str = this.props.details.body.toString('html');
+    const html = $.parseHTML( str );
+    $log.replaceWith( html );
+  }
+
+  createMarkup() {
+    return {__html: this.state.body};
   }
 
   renderPreview(){
@@ -60,7 +70,9 @@ class NewStory extends React.Component {
           <section className="body">
             <h1>{title}</h1>
             <img className="header-image" src={imageUrl} />
-            <p>{body}</p>
+            <div id="log">
+              <div dangerouslySetInnerHTML={this.createMarkup()} />
+            </div>
           </section>
         </div>
         <div className="button">
@@ -115,12 +127,11 @@ class NewStory extends React.Component {
             <br />
             <br />
 
-            <label>
-              <textarea
-                value={this.state.body}
-                onChange={this.update("body")}
-                placeholder="your great story"/>
-            </label>
+            <RichTextEditor
+              value={this.state.value}
+              onChange={this.bodyUpdate}
+              placeholder="your great story"
+              />
 
             <br />
             <br />
@@ -135,7 +146,19 @@ class NewStory extends React.Component {
 
   preview(e){
     e.preventDefault();
-    this.setState({mode: "preview"});
+    let ready = this.checkfields();
+    if (ready){
+      this.setState({mode: "preview"});
+    }
+  }
+
+  checkfields(){
+    if (this.state.title === "" || this.state.body === "" ){
+      alert("Story must have a title and body");
+      return false;
+    }
+
+    return true;
   }
 
   edit(e){
@@ -153,6 +176,7 @@ class NewStory extends React.Component {
 
   bodyUpdate(text) {
     this.setState({ value: text });
+    this.setState({body: this.state.value.toString('html')});
   }
 
   render(){

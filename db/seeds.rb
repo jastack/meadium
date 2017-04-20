@@ -51,27 +51,92 @@ Topic.create(name: "Technology")
 Topic.create(name: "Humans")
 Topic.create(name: "Culture")
 Topic.create(name: "Business")
+Topic.create(name: "New")
 
 # ------------Stories---------
-body = "Lake Mead is the largest reservoir in the United States,
-measured by water capacity. It is on the Colorado River about
-24 mi (39 km) from the Las Vegas Strip southeast of the city of
-Las Vegas, Nevada, in the states of Nevada and Arizona. Formed
-by the Hoover Dam, Lake Mead is 112 miles (180 km) long when the
-lake is full, has 759 miles (1,221 km) of shoreline, is 532
-feet (162 m) at greatest depth, with a surface elevation of 1,221.4
-feet (372.3 m) above sea level, and has 247 square miles (640 km2)
-of surface, and when filled to available capacity, 26.12 million
-acre feet (32.22 km3) of water. The lake has not reached full
-capacity, however, since 1983 due to a combination of drought
-and increased water demand.[1][2][3] Owing to current low water
-level, Lake Sakakawea holds claim over Lake Mead in terms of
-the United State's largest reservoir by total area and water
-in reserve.
+body = "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lake Mead is the largest reservoir in the United States, measured by water capacity. It is on the Colorado River about 24 mi (39 km) from the Las Vegas Strip southeast of the city of Las Vegas, Nevada, in the states of Nevada and Arizona. Formed by the Hoover Dam, Lake Mead is 112 miles (180 km) long when the lake is full, has 759 miles (1,221 km) of shoreline, is 532 feet (162 m) at greatest depth, with a surface elevation of 1,221.4 feet (372.3 m) above sea level, and has 247 square miles (640 km2) of surface, and when filled to available capacity, 26.12 million acre feet (32.22 km3) of water. The lake has not reached full capacity, however, since 1983 due to a combination of drought and increased water demand.[1][2][3] Owing to current low water level, Lake Sakakawea holds claim over Lake Mead in terms of the United State's largest reservoir by total area and water in reserve. <br>
+ &nbsp;&nbsp;&nbsp;The reservoir serves water to the states of Arizona, Nevada and California, providing sustenance to nearly 20 million people and large areas of farmland.</p>
+<p>Thanks to Wikipedia for this short article on Lake Mead!</p>"
 
-The reservoir serves water to the states of Arizona, Nevada
-and California, providing sustenance to nearly 20 million
-people and large areas of farmland"
+body1 = "<p>Why do we keep bolting for Interstate 15 and the beaches of L.A. and San Diego when we have miles of shoreline just a short drive away?</p>
+<p>Boasting around 6.3 million visitors in 2012, the Lake Mead National Recreation Area is the fifth most visited location in the U.S. National Park System. The reservoir that became Lake Mead was created by the completion of the Hoover Dam in 1936, and the lake’s vicinity became the country’s first national recreation area in 1964.</p>
+<p>Today, the vast landscape is a haven for outdoorsy types, offering everything from kayaking and canoeing to hiking and camping. Dusty mountains tower above the Dodger-blue waters, the rugged terrain dotted with desert cacti, stunted shrubs and weathered trees.</p>
+<p>But while the popular destination lies just 30 miles from the Strip, many Las Vegans have never tested its waters. It’s high time we change that.</p>
+<h2><strong>Boating, water sports and houseboating</strong></h2>
+<p>Let’s start with the obvious: Lake Mead is the largest reservoir by volume in the U.S., and its waters cover 248 square miles—plenty of space for you to make waves in, even if the recent drought has lowered the water level and encircled the lake with a distinctive bathtub ring.</p>
+<p>The recreation area is in the midst of its busiest season, according to spokeswoman Christie Vanover, who says more than half the lake’s annual visitors come during the “101 days of summer” from Memorial Day to Labor Day.</p>
+<p>“Whether it’s fishing, whether it’s wakeboarding, water skiing, Jet Skiing, this is the time of year,” Vanover says. “It’s definitely boating season.”</p>
+<p>&nbsp;With watercraft rentals available at marinas and through authorized companies, you don't need your own boat to enjoy the lake's waters. Photo: Sam Morris</p>
+<p>With watercraft rentals available at marinas and through authorized companies, you don't need your own boat to enjoy the lake's waters.</p>
+<p>And it’s definitely hot. The park’s heat is not something to underestimate—this summer has already seen several heat-related illnesses and a probable fatality. During extreme temperatures the park issues excessive heat warnings, advising visitors that participating in hiking and other strenuous activities is highly discouraged. Boaters have the water when they need to cool off (lifejackets, please!), but it’s vital to stay hydrated and avoid overindulging in alcohol when you’re under the sun.</p>
+<p>You don’t have to own your own boat to take advantage of the lake or nearby Colorado River and Lake Mohave. Small watercraft rentals start at $25 per hour or $80 per day and are a great way to explore the lake’s more remote destinations. Rentals are available at Willow Beach Marina on the Colorado, both of Lake Mohave’s marinas (Katherine’s Landing and Cottonwood Cove) and at three of Lake Mead’s marinas (Las Vegas Boat Harbor, Callville Bay and Temple Bar). Lake marinas also offer personal watercraft, water skis, wakeboards, kneeboards and inner tubes, so you can play on the water before claiming a spot on the shoreline for a picnic or hike.</p>
+<p>Looking for a group getaway? Though houseboats are not permitted on the Colorado River, they’re a popular option at Mead and Mohave lakes, where families and groups of friends enjoy the comforts of home at Callville Bay or Cottonwood Cove. Built to accommodate eight to 15 people, houseboats ($503-$1,395 per day) also boast amenities like barbecue grills, kitchen appliances, TVs, DVD players and safety items. Some even include hot tubs, wet bars and DirecTV, so you can relax after a day of water skiing, mojito in hand, watching a rerun of Girls—all while snapping photos of bighorn sheep.</p>
+<p>Not just anyone can step up to a boat’s wheel, though. People born after 1983 must obtain a Nevada Boater Education Card. The test—and its study guide (all the rules and regulations you need to know about riding on the water)—are available at all marinas and online at the Nevada Department of Wildlife’s website, ndow.org. Newbies shouldn’t be too intimidated, as boat rentals come with a mandatory orientation that includes operational instructions, fuel and equipment checks and information on the lake’s invasive quagga mussels and how to prevent spreading them.</p>
+<h2><strong>Beach</strong></h2>
+<p>Beaches can be accessed both by boat and car.</p>
+<p>If boating sounds like too much work, park visitors can also access a few beaches by car. Boulder Beach is a popular spot located right off Lakeshore Road and US 93. Cottonwood Cove on Lake Mohave and Willow Beach on the Colorado also offer pleasant beaches where you can put up an umbrella and nestle down with a summer read. However, the terrain of the local beaches varies—some areas are rocky, others are lined with pebbles and some have smooth sand begging to be formed into castles (or even casinos). Cottonwood Cove and Boulder Beach are also campgrounds, so you’ll find fire pits, grills and picnic tables when you’re ready for a snack.</p>
+<h2><strong>Hiking and cycling</strong></h2>
+<p>Exploration isn’t limited to the water at Lake Mead National Recreation Area; 87 percent of the park (which encompasses 1.5 million acres) is actually land.</p>
+<p>“When it gets to be the cooler months we see a lot of cyclists out at the park,” Vanover says. “We have some great trails for cycling, and we even host a few marathons and triathlons out here.”</p>
+<p>The park offers two maintained hiking trails: the Historic Railroad Tunnel Trail and the River Mountains Loop Trail. The first runs atop a former railroad that once hauled supplies through the area during construction of the Hoover Dam and takes walkers on a flat, 3.7-mile route through six old railroad tunnels. The second is a newer trail that loops through the park for more than 30 miles, connecting the River Mountains, Henderson, Boulder City and the lake. Paved and challenging, it’s popular with spandex-clad cyclists on weekends.</p>
+<p>While most know Lake Mead for its water, the national recreation area is actually 87 percent land.</p>
+<p>Hikers can also take off on unmaintained routes that lead through tiny slot canyons, past steamy hot springs and sometimes to the lakes and river itself. While the recreation area’s website offers limited information, you can find thorough trail guides at birdandhike.com. Whether you’re trying to figure out how to maneuver up Spooky Canyon’s weird rock formations or find GPS coordinates for the hike to Miner’s Cove Wash Overlook, that’s the place to go.</p>
+<p>The park also has nine designated wilderness areas. “You can escape and actually go into an area where there’s no motorized vehicles and just walk through the desert and the canyon walls,” Vanover says. “It’s really peaceful.”</p>
+<p>The St. Thomas trail leads to the former city of St. Thomas, which operated during the dam’s construction and was flooded as the reservoir filled. The recent drought has caused water levels to drop and revealed the town’s ruins again. There’s also the Gold Strike Hot Springs trail, which begins right off the 93 outside Boulder City and ends with a hot soak for your aching feet.</p>
+<p>Hikers are encouraged to bring ample water, sunscreen and appropriate clothing, and to heed the park’s safety tips. “We do recommend this time of year that you really limit your hikes to early morning and maybe an hour or so,” says Vanover, citing the park’s soaring summer temperatures.</p>
+<h2><strong>Fishing</strong></h2>
+<p>&nbsp;Whether you're feeding the ducks at the marina during a beach day or exploring the slot canyons on foot, the recreation area offers much to do beyond boating. Photo: Sam Morris</p>
+<p>Whether you're feeding the ducks at the marina during a beach day or exploring the slot canyons on foot, the recreation area offers much to do beyond boating.</p>
+<p>We’ve all heard (and maybe told) jokes about three-eyed fish in Lake Mead, and we know the stories of the mob’s cement boots. Don’t let that stop you from casting a line, though. According to one Willow Beach employee, many boat renters are actually on the river to fish—trout is a popular catch on the Colorado, while bass and catfish are just two of the species found in Lake Mead.</p>
+<p>Fishing here is a 24-hour, year-round activity, and only a few places are out of bounds for the sport. Fishing isn’t permitted in the posted boundaries of federal hatcheries, immediately above and below Hoover Dam, and areas designated as harbors. Before you bait your hook, you’ll need a license to fish from the Department of Wildlife (Arizona and Nevada issue separate licenses). Nevada fishing licenses can be obtained at ndow.org, where all fishing rules and regulations are listed. Anglers can also pick up rule books at each of the marinas.</p>
+<h2><strong>Kayaking and canoeing</strong></h2>
+<p>While some crave the vroom and zoom of powerboats, others prefer the serenity of paddling a kayak down the river, hearing only the light breeze through the canyon walls and the sound of the stream washing over the pebbles onshore. With the towering Black Canyon, a swift current and beautiful flora and fauna, the swatch of Colorado River just below Hoover Dam is one of the country’s premier spots to canoe and kayak.</p>
+<p>It’s easy to make a day of exploring the river. Pack a meal and spend the hours paddling, or pull over and tie on for shoreline hikes that offer a unique perspective on the river’s environment and, sometimes, a dip in natural hot springs.</p>
+<p>Willow Beach marina in Arizona offers rentals for kayaks, tandem kayaks and canoes, while sit-on-top kayaks are available to rent at local sporting and recreation outlets. A list of authorized commercial outlets is featured on the park’s website, and some companies also offer guided kayak and canoe tours.</p>
+<p>Insider tip: Start by paddling north from Willow Beach toward the Hoover Dam, then let the current carry you back when your arms are exhausted.</p>
+<h2><strong>Camping</strong></h2>
+<p>&nbsp;Keep an eye out for Nevada's state animal, the bighorn sheep, while you're exploring Lake Mead. Photo: Sam Morris</p>
+<p>Keep an eye out for Nevada's state animal, the bighorn sheep, while you're exploring Lake Mead.</p>
+<p>Wilderness slumber party? Camping is a year-round activity at the park, which offers sites at each of the Lake Mead marinas and Boulder Beach, as well as Katherine’s Landing on Lake Mohave. Site amenities include restrooms, running water, dump stations, grills and picnic tables, and for the fancier camper, some include recreational vehicle hook-ups. The fee to camp is $10 per site, and reservations are not available.</p>
+<p>If you’re really looking to rough it, the park’s primitive wilderness areas can be your home for the night. Just be sure to pack out everything you bring in and leave no trace. You can find the rules and regulations about campfires and grilling at nps.gov, and campers should know that special restrictions are in place during summer months. Boaters can also set up camp along the lake’s shoreline, as long as the area isn’t marked “no camping.” Don’t forget to drop that anchor.</p>
+<h2><strong>Plan your trip</strong></h2>
+<p>Destinations:</p>
+<p>Willow Beach Marina (Colorado River)</p>
+<p>25804 N. Willow Beach Road., Willow Beach, Arizona, 928-767-4747, willowbeachharbor.com.</p>
+<p>Las Vegas Boat Harbor (Lake Mead)</p>
+<p>490 Horsepower Cove Road, Boulder City, 293-1191, boatinglakemead.com.</p>
+<p>Callville Bay Marina (Lake Mead)</p>
+<p>100 Callville Bay Road, 800-255-5561, callvillebay.com.</p>
+<p>Temple Bar (Lake Mead)</p>
+<p>1 Main St., Temple Bar, Arizona, 800-255-5561, templebarlakemead.com.</p>
+<p>Cottonwood Cove (Lake Mohave)</p>
+<p>1000 Cottonwood Cove Road, Cottonwood Cove, 800-266-5561, cottonwoodcoveresort.com.</p>
+<p>Lake Mohave Resort (Lake Mohave)</p>
+<p>2690 E. Katherine Spur Road, Bullhead City, Arizona, 928-754-3245, sevencrown.com.</p>
+<h2><strong>Activities:</strong></h2>
+<p>Powerboats</p>
+<p>&nbsp;&nbsp;Available to rent for $25-$80 hourly, $80-$560 daily.</p>
+<p>Jet skis</p>
+<p>&nbsp;&nbsp;Rentals run $44-$95 hourly, $225-$450 daily.</p>
+<p>Houseboats</p>
+<p>&nbsp;&nbsp;Houseboat rentals range from $503-$1,395 daily. Many marinas recommend booking well in advance of your intended vacation.</p>
+<p>Kayaks and canoes</p>
+<p>&nbsp;&nbsp;Rentals range from $10-$20 hourly, $45-$85 daily.</p>
+<p>Camping</p>
+<p>&nbsp;&nbsp;Campsites cost $10 per night and are generally available on a first-come, first-served basis.</p>
+<p>This is a sample from the site LV Weekly. <a href='https://lasvegasweekly.com/news/2013/jul/11/how-fall-love-lake-mead/'>Link here</a></p>"
+
+body2 = '<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a sample article. It originally comes from <a href="https://lasvegasweekly.com/news/2017/apr/06/how-to-have-floating-fun-lake-mead/">here.</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I never thought I’d find happiness in a snug, 850-square-foot boat docked on the Florida coast, but I often daydream about my vacation aboard that Prout Catamaran. I enjoyed boat life so much, I realized I’d never taken advantage of the lake in my own backyard.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With temperatures rising, April is an ideal time to hit Lake Mead, and you don’t even need your own boat. As long as you assemble a large group, you can rent a boat and have a daytime adventure that’s affordable for everyone. Sites to see include the Mike O’Callaghan–Pat Tillman Memorial Bridge, Swallow Cove, Wishing Well Cove and other scenic spots to discover and make your own.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bruce Nelson, operations director at Las Vegas Boat Harbor and Lake Mead Marina, emphasizes safety and planning ahead—making sure there’s a life jacket for every person on the vessel, a flotation device, a whistle and a fire extinguisher, and, of course, knowing where everything is. “Check the weather,” he adds. “Lake Mead can be treacherous if you’re not paying attention to the weather. You don’t want to be in the middle of the lake unprepared.” Most importantly, Nelson says, “Never drink and boat. You can get a DUI on the water just like you can [in a car].”</p>'
+
+body4 = '<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The National Park Service is seeking public comment on a project that would add wireless internet infrastructure to developed areas within Lake Mead National Recreation Area.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;The park is developing a five-year contract that would allow a business to provide wireless internet access at reasonable rates within select areas of the park to improve and modernize the visitor experience.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;Antennas will need to be installed within the park to provide the service. Infrastructure will be confined to pre-existing structures and buildings within campgrounds, marinas, employee housing areas and concessioner facilities.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project has the potential to impact historic structures and campgrounds. The campgrounds at Boulder Beach, Cottonwood Cove, Echo Bay, Katherine Landing and Temple Bar were constructed between the 1940s and the 1960s and are considered historic. Every effort will be made to ensure the visibility of equipment is minimal to visitors and that it will not impact the historic character of the campgrounds.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The public is encouraged to comment on the proposed project. Feedback will be accepted through April 2 both online at http://go.nps.gov/lakewifi and via U.S. mail at: Lake Mead National Recreation Area Superintendent, Attention: Proposed Wi-Fi Project, 601 Nevada Way, Boulder City, Nevada 89005.</p>
+<p>This is an actual news story from KTNV (<a href="http://www.ktnv.com/news/lake-mead-thinking-about-adding-wi-fi">link here</a>)</p>'
 
 title1 = "Is Lake Mead the Best Lake?"
 title2 = "Ten Great Things to do with an Inflatable Raft at Lake Mead this summer"
@@ -83,6 +148,7 @@ title7 = "Nevada Fishing Report"
 title8 = "Rocky Ward claims Angling Title"
 title9 = "Fishing The Overton Arm"
 title10 = "Retired Ranger Offers History of Lake Mohave"
+title11 = "Boatlife: How to Have Floating Fun at Lake Mead"
 
 subtitle1 = "For the past two-hundred years people have debated over the definitive ranking of American
   lakes. Here's why Lake Mead deserves the top spot."
@@ -96,6 +162,8 @@ subtitle7 = "I hadn't expected that a tiny glimmer of hope for the future could 
 subtitle8 = "How wild it was, to let it be"
 subtitle9 = "You have to know how to accept rejection and reject acceptance"
 subtitle10 = "Deep feelings always mean more than they are conscious of saying"
+subtitle11 = "This is the 11th subtitle! Woot woot!"
+
 
 image1 = "https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg"
 image2 = "https://i1.wp.com/nicholasnelson.net/wp-content/uploads/2013/09/2013-07-20-11.00.00.jpg"
@@ -107,17 +175,19 @@ image7 = "https://www.ethos3.com/wp-content/uploads/2015/12/free-stock-photo1.jp
 image8 = "https://hbr.org/resources/images/article_assets/2015/05/MAY15_14_96324959.jpg"
 image9 = "http://savethewater.org/wp-content/uploads/2015/05/Lake-Mead-Has-Dropped-To-Its-Lowest-Level-Ever.jpg"
 image10 = "http://i.huffpost.com/gadgets/slideshows/358700/slide_358700_3987034_free.jpg"
+image11 = "//media.lasvegasweekly.com/img/photos/2017/04/05/0406_Boating-by-Christopher-Devargas_t1000.jpg?c76bf34eada957f64a0b14990027a576ff9bf379"
 
-Story.create( title: title1, body: body, image_url: image1, subtitle: subtitle1, author_id: 3, topic_id: 1)
+Story.create( title: title1, body: body1, image_url: image1, subtitle: subtitle1, author_id: 3, topic_id: 1)
 Story.create( title: title2, body: body, image_url: image2, subtitle: subtitle2, author_id: 2, topic_id: 1)
 Story.create( title: title3, body: body, image_url: image3, subtitle: subtitle3, author_id: 1, topic_id: 1)
-Story.create( title: title4, body: body, image_url: image4, subtitle: subtitle4, author_id: 4, topic_id: 2)
+Story.create( title: title4, body: body4, image_url: image4, subtitle: subtitle4, author_id: 4, topic_id: 2)
 Story.create( title: title5, body: body, image_url: image5, subtitle: subtitle5, author_id: 5, topic_id: 2)
 Story.create( title: title6, body: body, image_url: image6, subtitle: subtitle6, author_id: 6, topic_id: 2)
 Story.create( title: title7, body: body, image_url: image7, subtitle: subtitle7, author_id: 7, topic_id: 2)
 Story.create( title: title8, body: body, image_url: image8, subtitle: subtitle8, author_id: 8, topic_id: 2)
 Story.create( title: title9, body: body, image_url: image9, subtitle: subtitle9, author_id: 9, topic_id: 2)
 Story.create( title: title10, body: body, image_url: image10, subtitle: subtitle10, author_id: 10, topic_id: 1)
+Story.create( title: title11, body: body2, image_url: image11, subtitle: subtitle11, author_id: 4, topic_id: 3)
 
 
 # --------------Comments-------------

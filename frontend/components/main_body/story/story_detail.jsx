@@ -11,7 +11,6 @@ class Story extends React.Component {
     this.renderFollows = this.renderFollows.bind(this);
     this.deleteStory = this.deleteStory.bind(this);
     this.deleteButton = this.deleteButton.bind(this);
-    this.handleLogin = this.handleLogin.bind(this);
   }
 
   componentDidMount(){
@@ -41,8 +40,11 @@ class Story extends React.Component {
     }
   }
 
-  handleLogin(e){
-
+  renderBody(){
+    var $log = $('#log');
+    const str = this.props.details.body.toString('html');
+    const html = $.parseHTML( str );
+    $log.replaceWith( html );
   }
 
   ownStory(){
@@ -81,6 +83,9 @@ class Story extends React.Component {
   }
 
   render(){
+    if (this.props.details.body){
+      this.renderBody();
+    }
     const id = this.props.location.pathname.slice(1);
     const author = this.props.details.author;
     const title = this.props.details.title;
@@ -114,7 +119,8 @@ class Story extends React.Component {
             <h1>{title}</h1>
             <h2 className="subtitle">{subtitle}</h2>
             <img className="header-image" src={imageUrl} />
-            <p>{body}</p>
+            <div id="log">
+            </div>
           </section>
 
           <section className="likes">
