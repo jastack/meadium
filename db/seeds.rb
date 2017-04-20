@@ -41,8 +41,18 @@ User.create(username: "Luke", password: "password1" , avatar_url: avatar9 , desc
 User.create(username: "Charlotte", password: "password1" , avatar_url: avatar10 , description: description10 )
 
 
-# -------------------------------
-
+# ------------------ Dates ----------
+date1 = DateTime.new(2017, 4, 15)
+date2 = DateTime.new(2017, 3, 17)
+date3 = DateTime.new(2017, 2, 16)
+date4 = DateTime.new(2017, 1, 29)
+date5 = DateTime.new(2016, 9, 29)
+date6 = DateTime.new(2017, 4, 01)
+date7 = DateTime.new(2016, 8, 7)
+date8 = DateTime.new(2016, 7, 01)
+date9 = DateTime.new(2016, 12, 13)
+date10 = DateTime.new(2017, 9, 15)
+date11 = DateTime.new(2016, 5, 12)
 
 # ------------------- Topics -------------
 Topic.create(name: "Top Stories")
@@ -177,17 +187,17 @@ image9 = "http://savethewater.org/wp-content/uploads/2015/05/Lake-Mead-Has-Dropp
 image10 = "http://i.huffpost.com/gadgets/slideshows/358700/slide_358700_3987034_free.jpg"
 image11 = "//media.lasvegasweekly.com/img/photos/2017/04/05/0406_Boating-by-Christopher-Devargas_t1000.jpg?c76bf34eada957f64a0b14990027a576ff9bf379"
 
-Story.create( title: title1, body: body1, image_url: image1, subtitle: subtitle1, author_id: 3, topic_id: 1)
-Story.create( title: title2, body: body, image_url: image2, subtitle: subtitle2, author_id: 2, topic_id: 1)
-Story.create( title: title3, body: body, image_url: image3, subtitle: subtitle3, author_id: 1, topic_id: 1)
-Story.create( title: title4, body: body4, image_url: image4, subtitle: subtitle4, author_id: 4, topic_id: 2)
-Story.create( title: title5, body: body, image_url: image5, subtitle: subtitle5, author_id: 5, topic_id: 2)
-Story.create( title: title6, body: body, image_url: image6, subtitle: subtitle6, author_id: 6, topic_id: 2)
-Story.create( title: title7, body: body, image_url: image7, subtitle: subtitle7, author_id: 7, topic_id: 2)
-Story.create( title: title8, body: body, image_url: image8, subtitle: subtitle8, author_id: 8, topic_id: 2)
-Story.create( title: title9, body: body, image_url: image9, subtitle: subtitle9, author_id: 9, topic_id: 2)
-Story.create( title: title10, body: body, image_url: image10, subtitle: subtitle10, author_id: 10, topic_id: 1)
-Story.create( title: title11, body: body2, image_url: image11, subtitle: subtitle11, author_id: 4, topic_id: 3)
+Story.create( title: title1, body: body1, image_url: image1, subtitle: subtitle1, author_id: 3, topic_id: 1, created_at: date1)
+Story.create( title: title2, body: body, image_url: image2, subtitle: subtitle2, author_id: 2, topic_id: 1, created_at: date2)
+Story.create( title: title3, body: body, image_url: image3, subtitle: subtitle3, author_id: 1, topic_id: 1, created_at: date3)
+Story.create( title: title4, body: body4, image_url: image4, subtitle: subtitle4, author_id: 4, topic_id: 2, created_at: date4)
+Story.create( title: title5, body: body, image_url: image5, subtitle: subtitle5, author_id: 5, topic_id: 2, created_at: date5)
+Story.create( title: title6, body: body, image_url: image6, subtitle: subtitle6, author_id: 6, topic_id: 2, created_at: date6)
+Story.create( title: title7, body: body, image_url: image7, subtitle: subtitle7, author_id: 7, topic_id: 2, created_at: date7)
+Story.create( title: title8, body: body, image_url: image8, subtitle: subtitle8, author_id: 8, topic_id: 2, created_at: date8)
+Story.create( title: title9, body: body, image_url: image9, subtitle: subtitle9, author_id: 9, topic_id: 2, created_at: date9)
+Story.create( title: title10, body: body, image_url: image10, subtitle: subtitle10, author_id: 10, topic_id: 1, created_at: date10)
+Story.create( title: title11, body: body2, image_url: image11, subtitle: subtitle11, author_id: 4, topic_id: 3, created_at: date11)
 
 
 # --------------Comments-------------
