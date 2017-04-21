@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 
+var http = require('http');
+setInterval(function(){
+  http.get("http://meadium.herokuapp.com");
+}, 300000);
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
