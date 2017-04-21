@@ -8,8 +8,6 @@ setInterval(function(){
   http.get("http://meadium.herokuapp.com");
 }, 300000);
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
   let store;
   if (window.currentUser) {
