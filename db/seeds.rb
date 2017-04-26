@@ -159,6 +159,15 @@ title8 = "Rocky Ward claims Angling Title"
 title9 = "Fishing The Overton Arm"
 title10 = "Retired Ranger Offers History of Lake Mohave"
 title11 = "Boatlife: How to Have Floating Fun at Lake Mead"
+title12 = "Major Local Fishing tourneys on Lake Mead Upcoming"
+title13 = "Lake Mead to get above-average flow of Colorado River water"
+title14 = "Lake Mead paddle Wheeler loses power on lake"
+title15 = "Lake Mead shortage appears unlikely for 2018"
+title16 = "Smart Agreement Leave More Water in Lake Mead, Regulators Say"
+title17 = "In Space, Making Peanut Butter and Jelly is a Tiny Adventure"
+title18 = "The first Space Launch System flight will probably be delayed"
+title19 = "Ligtning and Myster Objects Spotted by Space Station"
+title20 = "Self-driving Cars and Space Robots"
 
 subtitle1 = "For the past two-hundred years people have debated over the definitive ranking of American
   lakes. Here's why Lake Mead deserves the top spot."
@@ -172,7 +181,16 @@ subtitle7 = "I hadn't expected that a tiny glimmer of hope for the future could 
 subtitle8 = "How wild it was, to let it be"
 subtitle9 = "You have to know how to accept rejection and reject acceptance"
 subtitle10 = "Deep feelings always mean more than they are conscious of saying"
-subtitle11 = "This is the 11th subtitle! Woot woot!"
+subtitle11 = "What's living if you never pull you shorts down and slide on the ice?"
+subtitle12 = "Is it possible the evenone else on Earth is early?"
+subtitle13 = "Feasting is like eating, but with bigger plates"
+subtitle14 = "If only, if only, the woodpecker sighs, the bark on the tree was as soft of the skies"
+subtitle15 = "Rattlesnakes would be a lot more dangerous if they didn't have the rattle"
+subtitle16 = "There is no lake at Camp Green Lake"
+subtitle17 = "When you spend your whole life living in a hole, the only way you can go is up"
+subtitle18 = "You have only one life, make the most of it"
+subtitle19 = "You make the decision: Whom did God punish?"
+subtitle20 = "He couldn't help but think that a hundred time zero was still nothing"
 
 
 image1 = "https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg"
@@ -186,6 +204,15 @@ image8 = "https://hbr.org/resources/images/article_assets/2015/05/MAY15_14_96324
 image9 = "http://savethewater.org/wp-content/uploads/2015/05/Lake-Mead-Has-Dropped-To-Its-Lowest-Level-Ever.jpg"
 image10 = "http://i.huffpost.com/gadgets/slideshows/358700/slide_358700_3987034_free.jpg"
 image11 = "//media.lasvegasweekly.com/img/photos/2017/04/05/0406_Boating-by-Christopher-Devargas_t1000.jpg?c76bf34eada957f64a0b14990027a576ff9bf379"
+image12 = 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg'
+image13 = "http://mediad.publicbroadcasting.net/p/kajx/files/201407/A_bull_moose_animal_mammal.jpg"
+image14 = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/20/2j/p0202jwh.jpg"
+image15 = "http://rabbitbreeders.us/supplies/wp-content/uploads/2016/09/Rabbits.jpg"
+image16 = "http://www.serenityhelicopters.com/Media/Default/Images/BlogPhotos/Lake-Mead-from-the-air.jpg"
+image17 = "http://peanutbutterlovers.com/wp-content/uploads/2015/10/pb_hero.jpg"
+image18 = "https://www.nasa.gov/sites/default/files/11572307115_1194957269_o_0.jpg"
+image19 = "https://static.pexels.com/photos/110854/pexels-photo-110854.jpeg"
+image20 = "https://ericpetersautos.com/wp-content/uploads/2015/12/Google-self-driving-car.jpg"
 
 Story.create( title: title1, body: body1, image_url: image1, subtitle: subtitle1, author_id: 3, topic_id: 1, created_at: date1)
 Story.create( title: title2, body: body, image_url: image2, subtitle: subtitle2, author_id: 2, topic_id: 1, created_at: date2)
@@ -198,6 +225,15 @@ Story.create( title: title8, body: body, image_url: image8, subtitle: subtitle8,
 Story.create( title: title9, body: body, image_url: image9, subtitle: subtitle9, author_id: 9, topic_id: 2, created_at: date9)
 Story.create( title: title10, body: body, image_url: image10, subtitle: subtitle10, author_id: 10, topic_id: 1, created_at: date10)
 Story.create( title: title11, body: body2, image_url: image11, subtitle: subtitle11, author_id: 4, topic_id: 3, created_at: date11)
+Story.create( title: title12, body: body1, image_url: image12, subtitle: subtitle12, author_id: 4, topic_id: 3, created_at: date1)
+Story.create( title: title13, body: body1, image_url: image13, subtitle: subtitle13, author_id: 2, topic_id: 3, created_at: date2)
+Story.create( title: title14, body: body1, image_url: image14, subtitle: subtitle14, author_id: 3, topic_id: 3, created_at: date3)
+Story.create( title: title15, body: body1, image_url: image15, subtitle: subtitle15, author_id: 6, topic_id: 4, created_at: date4)
+Story.create( title: title16, body: body1, image_url: image16, subtitle: subtitle16, author_id: 7, topic_id: 4, created_at: date5)
+Story.create( title: title17, body: body1, image_url: image17, subtitle: subtitle17, author_id: 8, topic_id: 5, created_at: date6)
+Story.create( title: title18, body: body1, image_url: image18, subtitle: subtitle18, author_id: 9, topic_id: 5, created_at: date7)
+Story.create( title: title19, body: body1, image_url: image19, subtitle: subtitle19, author_id: 7, topic_id: 6, created_at: date8)
+Story.create( title: title20, body: body1, image_url: image20, subtitle: subtitle20, author_id: 2, topic_id: 6, created_at: date9)
 
 
 # --------------Comments-------------
