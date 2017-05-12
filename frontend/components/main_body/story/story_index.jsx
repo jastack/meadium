@@ -49,11 +49,11 @@ class StoryIndex extends React.Component {
         <div>
           <div className="index">
             <div className="box a">{storyArray[0]}</div>
-            <div className="row2">
-              <div className="box b">{storyArray[1]}</div>
-              <div className="box d">{storyArray[3]}</div>
-              <div className="box c">{storyArray[2]}</div>
-            </div>
+          </div>
+          <div className="row2">
+            <div className="box b">{storyArray[1]}</div>
+            <div className="box d">{storyArray[3]}</div>
+            <div className="box c">{storyArray[2]}</div>
           </div>
         </div>
       );
