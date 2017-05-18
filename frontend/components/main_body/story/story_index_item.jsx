@@ -27,7 +27,7 @@ const dateFixer = (date) => {
 const StoryIndexItem = ({ story, router }) => (
   <div className="storyIndexItem">
 
-    <img src={story.image_url} />
+    <img id="thumbnail" src={story.image_url} />
 
     <div className="story-info">
       <Link to={`/${story.id}`} >{story.title}</Link>
